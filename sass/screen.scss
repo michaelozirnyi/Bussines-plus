@@ -46,7 +46,7 @@ h2 {
 h3 {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 .btn {
   height: 50px;
@@ -61,49 +61,63 @@ h3 {
   }
 }
 a:hover {
-  color: #ffaf36;
   text-decoration: none;
+  @extend .orange
 }
 .item-center{
   align-items: center;
 }
 
-body {
-  font-family: 'Raleway','Open Sans', 'Lora', Arial, helvetica, sans-serif;
-}
 header {
   display: flex;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
+  background-color: #818a91;
+  height: 395px;
   .menu {
-    padding-top: 25px;
     position: relative;
+    padding-top: 25px;
     font-size: 14px;
     font-weight: 600;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
   }
+  .phone {
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  .main-menu {
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 15px;
+    li {
+      display: inline;
+      &:nth-child(n+1) {
+        margin-left: 25px;
+        margin-right: 20px;
+      }
+      &:active {
+        border-color: #ffaf36;
+        @extend .orange
+      }
+
+    }
+  }
+}
+span {
+  font-weight: 400;
+  margin-top: 15px;
 }
 .head-img {
   position: absolute;
-  background: #818a91;
 }
-.nav {
-  text-align: center;
-    &:nth-child(n+1){
-    margin-left: 45px;
-  }
-}
-
-
-
 .content-width {
   width: 1140px;
 }
 .all-content {
-  margin-top: 350px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -118,7 +132,7 @@ header {
   font-weight: 600;
 }
 .img-post {
-  width: 1040px;
+  width: 1000px;
   height: 335px;
 }
 .flexes {
@@ -126,31 +140,82 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.post {
-  width: 1040px;
-  padding-left: 40px;
-  padding-top: 5px;
+.all-posts {
+  margin: 25px 0 35px 0;
+  border-bottom: solid 1px #e6e9ee;
+  .post {
+    padding: 5px 0 70px 40px;
+    width: 1040px;
+  }
 }
 .text-p {
   padding-top: 45px;
   padding-bottom: 60px;
 }
+.share {
+  margin: 20px 10px 0 0;
+}
 .soc-s {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  border: solid 1px;
   text-align: center;
-  margin-right: 10px;
-  .faceb {
-    background-color: #496fa5;     /* Неполучается настроить иконки на соц сети*/
+  vertical-align: bottom;
+  margin: 5px;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+.faceb {
+  background-color: #496fa5;
+  &:hover {
+    color: #36a8ff;
+    background-color: rgba(0, 0, 0, 0);
+    border-right: solid 1px #36a8ff;
   }
-  .twit {
-    background-color: #00baef;
+}
+.twit {
+  background-color: #00baef;
+  &:hover {
+    color: #36a8ff;
+    background-color: rgba(0, 0, 0, 0);
+    border-right: solid 1px #36a8ff;
   }
-  .goog {
-    background-color: #eb4125;
+}
+.goog {
+  padding-top: -5px;
+  background-color: #eb4125;
+  &:hover {
+    color: #36a8ff;
+    background-color: rgba(0, 0, 0, 0);
+    border-right: solid 1px #36a8ff;
+  }
+}
+.send-to-next {
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    li {
+      text-decoration: none;
+      margin: 0 5px;
+      a {
+        border: solid 2px #2a2b2c;
+        width: 50px;
+        height: 50px;
+        color: #2a2b2c;
+        font-size: 18px;
+        font-weight: 400;
+        &:hover {
+          border-color: #ffaf36;
+          @extend .orange
+        }
+        &:active {
+          border-color: #ffaf36;
+          @extend .orange
+        }
+      }
+    }
   }
 }
 .piramids{
@@ -177,45 +242,58 @@ header {
   background-color: #2a2b2c;
   padding-top: 70px;
   padding-bottom: 85px;
-}
-.social {
-  a {
-    border: solid 1px;
-    text-decoration: none;
-    padding: 5px;         /* Подобрать правильные размеры для иконок соц сетей*/
-    i {
-      text-align: center;
-      width: 20px;
-      font-size: 15px;
+
+  .footer-date {
+    margin: 20px 0 40px 0;
+  }
+  .footer-social {
+    a {
+      border: solid 1px;
+      text-decoration: none;
+      padding: 5px;         /* Подобрать правильные размеры для иконок соц сетей*/
+      i {
+        text-align: center;
+        width: 20px;
+        font-size: 15px;
+      }
     }
   }
-}
-ul {
-  padding: 0;
-  li {
-    list-style-type: none;
-    padding: 15px;
-    &:nth-child(n+1) {
-      border-bottom: solid 1px;
+  .footer-menu {
+    padding: 0;
+    li {
+      list-style-type: none;
+      padding: 15px;
+      &:nth-child(n+1) {
+        border-bottom: solid 1px;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
     }
   }
+  .ft-f-sz {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+  }
+  .mr-top {
+    margin-top: 20px;
+  }
+  form {
+    .form {
+      border: solid 1px #8a8a8a;
+      background-color: #2a2b2c;
+      padding: 15px 20px;
+      margin: 0;
+    }
+    .comment-form {
+      width: 460px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+  }
+
+
 }
-.ft-f-sz {
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  }
-form {
-  .form {
-    border: solid 1px #8a8a8a;
-    background-color: #2a2b2c;
-    padding: 15px 20px;
-    margin: 0;
-  }
-  .comment-form {
-    width: 460px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
-}
+
 
