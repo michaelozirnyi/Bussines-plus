@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/* line 14, ../sass/_heder&footer.scss */
+a:hover, .footer-social a:hover, .footer-menu a:hover {
+  text-decoration: none;
+  color: #ffaf36;
+  border-color: #ffaf36;
+}
+
+/* line 21, ../sass/_heder&footer.scss */
+.head-img {
+  position: absolute;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* line 27, ../sass/_heder&footer.scss */
+.header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: flex-start;*/
+  justify-content: space-between;
+  font: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 395px;
+  padding-top: 25px;
+}
+/* line 38, ../sass/_heder&footer.scss */
+.header .logo {
+  padding-top: 5px;
+}
+/* line 41, ../sass/_heder&footer.scss */
+.header .phone {
+  font-weight: 400;
+  margin-top: 17px;
+}
+/* line 45, ../sass/_heder&footer.scss */
+.header .main-nav {
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 16px;
+}
+/* line 49, ../sass/_heder&footer.scss */
+.header .main-nav li {
+  display: inline;
+}
+/* line 51, ../sass/_heder&footer.scss */
+.header .main-nav li:nth-child(n+1) {
+  margin: 0 20px 0 25px;
+}
+/* line 54, ../sass/_heder&footer.scss */
+.header .main-nav li:active {
+  color: #ffaf36;
+}
+/* line 59, ../sass/_heder&footer.scss */
+.header .head-span {
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+/* line 71, ../sass/_heder&footer.scss */
+.footer {
+  background-color: #2a2b2c;
+  padding: 70px 0 85px 0;
+  font: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* line 78, ../sass/_heder&footer.scss */
+.item-center {
+  align-items: center;
+}
+
+/* line 81, ../sass/_heder&footer.scss */
+.footer-date {
+  margin: 20px 0 40px 0;
+  color: #8a8a8a;
+}
+
+/* line 85, ../sass/_heder&footer.scss */
+.footer-social {
+  margin-bottom: 10px;
+}
+/* line 87, ../sass/_heder&footer.scss */
+.footer-social a {
+  color: #8a8a8a;
+  border: solid 1px #373839;
+  text-decoration: none;
+  padding: 5px;
+  /* ╨Я╨╛╨┤╨╛╨▒╤А╨░╤В╤М ╨┐╤А╨░╨▓╨╕╨╗╤М╨╜╤Л╨╡ ╤А╨░╨╖╨╝╨╡╤А╤Л ╨┤╨╗╤П ╨╕╨║╨╛╨╜╨╛╨║ ╤Б╨╛╤Ж ╤Б╨╡╤В╨╡╨╣*/
+}
+/* line 92, ../sass/_heder&footer.scss */
+.footer-social a i {
+  text-align: center;
+  width: 20px;
+  font-size: 15px;
+}
+
+/* line 103, ../sass/_heder&footer.scss */
+.footer-menu {
+  padding: 0;
+}
+/* line 105, ../sass/_heder&footer.scss */
+.footer-menu li {
+  list-style-type: none;
+  padding: 15px 0;
+  border-bottom: solid 1px #373839;
+}
+/* line 109, ../sass/_heder&footer.scss */
+.footer-menu li:last-child {
+  border-bottom: none;
+}
+/* line 113, ../sass/_heder&footer.scss */
+.footer-menu a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #8a8a8a;
+}
+
+/* line 123, ../sass/_heder&footer.scss */
+.foot-nav-marker {
+  width: 0;
+  height: 0;
+  padding-right: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid;
+  border-left-color: #ffaf36;
+}
+
+/* line 133, ../sass/_heder&footer.scss */
+.contact-us h5 {
+  padding-bottom: 35px;
+}
+
+/* line 137, ../sass/_heder&footer.scss */
+.footer-table {
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+/* line 140, ../sass/_heder&footer.scss */
+.footer-table td {
+  border: 1px inset #373839;
+}
+
+/* line 144, ../sass/_heder&footer.scss */
+.footer-form, .comment-foot-form {
+  border: none;
+  color: #8a8a8a;
+  background-color: transparent;
+  padding: 15px 20px;
+  margin: 0;
+  width: 228px;
+}
+
+/* line 152, ../sass/_heder&footer.scss */
+.comment-foot-form {
+  width: 459px;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 16, ../sass/screen.scss */
+.white {
+  color: #fff;
+}
+
+/* line 18, ../sass/screen.scss */
+.upper {
+  text-transform: uppercase;
+}
+
+/* line 20, ../sass/screen.scss */
+a:hover, .footer-social a:hover, .footer-menu a:hover {
+  text-decoration: none;
+  color: #ffaf36;
+}
+
+/* line 23, ../sass/screen.scss */
+.btn {
+  height: 50px;
+  border: 2px solid #ffaf36;
+  border-radius: 0;
+  background-color: transparent;
+  font: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffaf36;
+}
+/* line 32, ../sass/screen.scss */
+.btn:hover {
+  color: #36a8ff;
+}
+
+/* line 37, ../sass/screen.scss */
+h3 {
+  height: 23px;
+  color: #1c1c1c;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+/* line 46, ../sass/screen.scss */
+h5 {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+/* line 52, ../sass/screen.scss */
+.main-wrap {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 57, ../sass/screen.scss */
+.content-center {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 61, ../sass/screen.scss */
+.main-content {
+  margin-top: 100px;
+}
+
+/* line 65, ../sass/screen.scss */
+.flexes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 69, ../sass/screen.scss */
+.between-flex {
+  justify-content: space-between;
+}
+
+/* line 72, ../sass/screen.scss */
+.under-title {
+  font-family: "Open Sans", sans-serif;
+  font: 16px/30;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* line 78, ../sass/screen.scss */
+.portait {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* line 84, ../sass/screen.scss */
+.text-p {
+  padding: 45px 0 60px 0;
+  color: #585858;
+}
+
+/* line 88, ../sass/screen.scss */
+.all-posts {
+  margin: 25px 0 35px 0;
+  border-bottom: solid 1px #e6e9ee;
+}
+/* line 91, ../sass/screen.scss */
+.all-posts .post {
+  padding: 5px 0 70px 0;
+  max-width: 1040px;
+}
+/* line 94, ../sass/screen.scss */
+.all-posts .post .img-post {
+  max-width: 1040px;
+  max-height: 335px;
+}
+
+/* line 100, ../sass/screen.scss */
+.author-post {
+  color: #757575;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* line 105, ../sass/screen.scss */
+.share {
+  margin: 20px 10px 0 0;
+  font: "Open Sans", sans-serif;
+}
+
+/* line 109, ../sass/screen.scss */
+.soc-s {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 5px;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 119, ../sass/screen.scss */
+.faceb, .twit:hover, .goog:hover {
+  background-color: #496fa5;
+}
+/* line 121, ../sass/screen.scss */
+.faceb:hover, .twit:hover, .goog:hover {
+  color: #36a8ff;
+  background-color: transparent;
+  border-right: solid 1px #36a8ff;
+}
+
+/* line 127, ../sass/screen.scss */
+.twit {
+  background-color: #36a8ff;
+}
+
+/* line 133, ../sass/screen.scss */
+.goog {
+  background-color: #eb4125;
+}
+
+/* line 140, ../sass/screen.scss */
+.send-to-next {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+/* line 144, ../sass/screen.scss */
+.send-to-next li {
+  text-decoration: none;
+  margin: 0 5px;
+}
+/* line 147, ../sass/screen.scss */
+.send-to-next li a {
+  border: solid 2px #1c1c1c;
+  width: 50px;
+  height: 50px;
+  color: #1c1c1c;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 154, ../sass/screen.scss */
+.send-to-next li a:hover {
+  border-color: #ffaf36;
+  color: #ffaf36;
+}
+/* line 158, ../sass/screen.scss */
+.send-to-next li a:active {
+  /*╨Ъ╨░╨║ ╨╖╨┤╨╡╤Б╤М ╨┐╤А╨░╨▓╨╕╨╗╤М╨╜╨╛ ╨╜╨░╤Б╨╗╨╡╨┤o╨▓╨░╤В╤М ╨е╨╛╨▓╨╡╤А??*/
+  border-color: #ffaf36;
+  color: #ffaf36;
+}
+
+/* line 165, ../sass/screen.scss */
+.piramids {
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 168, ../sass/screen.scss */
+.piramids .blue-piramid {
+  width: 155px;
+  height: 100px;
+  margin-right: 65px;
+}
+/* line 173, ../sass/screen.scss */
+.piramids .orange-piramid {
+  margin-top: 30px;
+  z-index: 2;
+  position: absolute;
+  width: 135px;
+  height: 70px;
+}
