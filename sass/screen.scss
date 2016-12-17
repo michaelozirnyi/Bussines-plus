@@ -22,6 +22,8 @@ a:hover {
   color: $orange;}
 .btn {
   height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   border: 2px solid $orange;
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
@@ -35,18 +37,18 @@ a:hover {
 }
 h2 {  }
 h3 {
-  height: 23px;
   color: $black;
-  font-family: sans-serif;
-  font-size: 30px;
+  font: 30px/24px $font-raleway;
   font-weight: 800;
-  line-height: 24px;
 }
 
 h5 {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font: 18px $font-raleway;
   font-weight: 900;
+}
+h6{
+  font: 16px/24px $font-raleway;
+  font-weight: 700;
 }
 
 .main-wrap {
@@ -61,11 +63,13 @@ h5 {
 .main-content {
   margin-top: 100px;
 }
-
 .flexes {
   display: flex;
   flex-wrap: wrap;
 }
+
+/*Начало  основных стилей для BLOG Page*/
+
 .between-flex {
   justify-content: space-between
 }
@@ -155,7 +159,7 @@ h5 {
         border-color: $orange;
         color: $orange;
       }
-      &:active {          /*Как здесь правильно наследoвать Ховер??*/
+      &:active {                          /*Как здесь правильно наследoвать Ховер??*/
         border-color: $orange;
         color: $orange;
       }
@@ -178,3 +182,43 @@ h5 {
     height: 70px;
   }
 }
+/*Конец основных стилей для BLOG Page*/
+
+/*Начало основных стилей для FAQ Page*/
+article {
+  column-count:2;                          /* Убрать ету строку и номерация - линейно, а не колонками*/
+  padding: 40px 0 100px 0;
+  ol {
+    flex-wrap: wrap;
+    li {
+      max-width: 530px;
+      padding-right: 30px;
+    }
+  }
+}
+
+.search-q {
+  text-align: center;
+  background-color: #eaeff3;
+  padding-top: 100px;
+}
+.search-form {
+  margin: 30px 0 60px 0;
+  .search-window {
+    border: 1px solid #e0e7ec;
+    width: 700px;
+    height: 50px;
+    padding-left: 25px;
+  }
+  .search-btn {
+    background-color: $orange;
+    margin-left: -5px;
+    margin-top: -5px;
+    width: 50px;
+    padding: 0;
+    font-size: 15px;
+    color: $black;
+    @extend .btn;
+  }
+}
+/*Конец основных стилей для FAQ Page*/
