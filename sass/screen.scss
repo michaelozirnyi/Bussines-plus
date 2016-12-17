@@ -14,7 +14,11 @@ $text-color: #585858;
 $footer-border-color: #373839;
 
 .white {
-  color: #fff;}
+  color: #fff;  }
+.black{
+  color: $black; }
+.bold {
+  font-weight: 700;  }
 .upper {
   text-transform: uppercase;}
 a:hover {
@@ -222,3 +226,56 @@ article {
   }
 }
 /*Конец основных стилей для FAQ Page*/
+
+
+/*Начало основных стилей для Contact-us Page*/
+.contact-styl {
+  align-items: center;
+  color: $black;
+  font-weight: 700;
+  .info-btn {
+    color: $black;
+    @extend .btn
+  }
+}
+
+.city-banner{
+  display: flex;
+  align-items: center;
+  min-height: 345px;
+  margin: 40px 0 100px 0;
+  background-color: rgba(0,0,0,.3);    /*Хороший способ затимнения картинок*/
+  .img-city-banner{
+    position: absolute;
+    z-index: -1;
+  }
+  .banner-text{
+    margin: 0 100px;
+    h3 {
+      color: $orange;
+    }
+  }
+}
+.bg-light-blu {
+  background: #eaeff3;
+}
+.contact-from {
+  padding-top: 100px;
+}
+.contact-us-form {
+  flex-direction: column;
+  margin-bottom: 30px;
+  .inp {
+    background-color: #eaeff3;
+    padding: 15px 0;
+    margin-top: 15px;
+    font: 14px/24px $font-open-sans;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-bottom: solid 1px #dce3e8;
+    width: 100%;
+  }
+}
+
+/*Конец основных стилей для Contact-us Page*/

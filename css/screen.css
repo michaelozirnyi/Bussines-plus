@@ -170,19 +170,31 @@ a:hover, .footer-social a:hover, .footer-menu a:hover {
 }
 
 /* line 18, ../sass/screen.scss */
+.black {
+  color: #1c1c1c;
+}
+
+/* line 20, ../sass/screen.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 22, ../sass/screen.scss */
 .upper {
   text-transform: uppercase;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 a:hover, .footer-social a:hover, .footer-menu a:hover {
   text-decoration: none;
   color: #ffaf36;
 }
 
-/* line 23, ../sass/screen.scss */
-.btn {
+/* line 27, ../sass/screen.scss */
+.btn, .search-form .search-btn, .contact-styl .info-btn {
   height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   border: 2px solid #ffaf36;
   border-radius: 0;
   background-color: transparent;
@@ -191,58 +203,61 @@ a:hover, .footer-social a:hover, .footer-menu a:hover {
   font-weight: 700;
   color: #ffaf36;
 }
-/* line 32, ../sass/screen.scss */
-.btn:hover {
+/* line 38, ../sass/screen.scss */
+.btn:hover, .search-form .search-btn:hover, .contact-styl .info-btn:hover {
   color: #36a8ff;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 h3 {
-  height: 23px;
   color: #1c1c1c;
-  font-family: sans-serif;
-  font-size: 30px;
+  font: 30px/24px "Raleway", sans-serif;
   font-weight: 800;
-  line-height: 24px;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 h5 {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font: 18px "Raleway", sans-serif;
   font-weight: 900;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
+h6 {
+  font: 16px/24px "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+/* line 58, ../sass/screen.scss */
 .main-wrap {
   background-color: #1c1c1c;
   display: flex;
   justify-content: center;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .content-center {
   width: 1140px;
   margin: 0 auto;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .main-content {
   margin-top: 100px;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .flexes {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 69, ../sass/screen.scss */
+/*╨Э╨░╤З╨░╨╗╨╛  ╨╛╤Б╨╜╨╛╨▓╨╜╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ ╨┤╨╗╤П BLOG Page*/
+/* line 77, ../sass/screen.scss */
 .between-flex {
   justify-content: space-between;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .under-title {
   font-family: "Open Sans", sans-serif;
   font: 16px/30;
@@ -250,7 +265,7 @@ h5 {
   font-weight: 400;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .portait {
   width: 60px;
   height: 60px;
@@ -258,42 +273,42 @@ h5 {
   overflow: hidden;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .text-p {
   padding: 45px 0 60px 0;
   color: #585858;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .all-posts {
   margin: 25px 0 35px 0;
   border-bottom: solid 1px #e6e9ee;
 }
-/* line 91, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .all-posts .post {
   padding: 5px 0 70px 0;
   max-width: 1040px;
 }
-/* line 94, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .all-posts .post .img-post {
   max-width: 1040px;
   max-height: 335px;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .author-post {
   color: #757575;
   font-size: 13px;
   font-weight: 600;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .share {
   margin: 20px 10px 0 0;
   font: "Open Sans", sans-serif;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .soc-s {
   border-radius: 50%;
   width: 50px;
@@ -305,39 +320,39 @@ h5 {
   font-weight: 400;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .faceb, .twit:hover, .goog:hover {
   background-color: #496fa5;
 }
-/* line 121, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .faceb:hover, .twit:hover, .goog:hover {
   color: #36a8ff;
   background-color: transparent;
   border-right: solid 1px #36a8ff;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .twit {
   background-color: #36a8ff;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .goog {
   background-color: #eb4125;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .send-to-next {
   display: flex;
   list-style-type: none;
   justify-content: center;
 }
-/* line 144, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .send-to-next li {
   text-decoration: none;
   margin: 0 5px;
 }
-/* line 147, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .send-to-next li a {
   border: solid 2px #1c1c1c;
   width: 50px;
@@ -346,30 +361,30 @@ h5 {
   font-size: 18px;
   font-weight: 400;
 }
-/* line 154, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .send-to-next li a:hover {
   border-color: #ffaf36;
   color: #ffaf36;
 }
-/* line 158, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .send-to-next li a:active {
   /*╨Ъ╨░╨║ ╨╖╨┤╨╡╤Б╤М ╨┐╤А╨░╨▓╨╕╨╗╤М╨╜╨╛ ╨╜╨░╤Б╨╗╨╡╨┤o╨▓╨░╤В╤М ╨е╨╛╨▓╨╡╤А??*/
   border-color: #ffaf36;
   color: #ffaf36;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .piramids {
   display: flex;
   justify-content: flex-end;
 }
-/* line 168, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .piramids .blue-piramid {
   width: 155px;
   height: 100px;
   margin-right: 65px;
 }
-/* line 173, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .piramids .orange-piramid {
   margin-top: 30px;
   z-index: 2;
@@ -377,3 +392,116 @@ h5 {
   width: 135px;
   height: 70px;
 }
+
+/*╨Ъ╨╛╨╜╨╡╤Ж ╨╛╤Б╨╜╨╛╨▓╨╜╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ ╨┤╨╗╤П BLOG Page*/
+/*╨Э╨░╤З╨░╨╗╨╛ ╨╛╤Б╨╜╨╛╨▓╨╜╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ ╨┤╨╗╤П FAQ Page*/
+/* line 192, ../sass/screen.scss */
+article {
+  column-count: 2;
+  /* ╨г╨▒╤А╨░╤В╤М ╨╡╤В╤Г ╤Б╤В╤А╨╛╨║╤Г ╨╕ ╨╜╨╛╨╝╨╡╤А╨░╤Ж╨╕╤П - ╨╗╨╕╨╜╨╡╨╣╨╜╨╛, ╨░ ╨╜╨╡ ╨║╨╛╨╗╨╛╨╜╨║╨░╨╝╨╕*/
+  padding: 40px 0 100px 0;
+}
+/* line 195, ../sass/screen.scss */
+article ol {
+  flex-wrap: wrap;
+}
+/* line 197, ../sass/screen.scss */
+article ol li {
+  max-width: 530px;
+  padding-right: 30px;
+}
+
+/* line 204, ../sass/screen.scss */
+.search-q {
+  text-align: center;
+  background-color: #eaeff3;
+  padding-top: 100px;
+}
+
+/* line 209, ../sass/screen.scss */
+.search-form {
+  margin: 30px 0 60px 0;
+}
+/* line 211, ../sass/screen.scss */
+.search-form .search-window {
+  border: 1px solid #e0e7ec;
+  width: 700px;
+  height: 50px;
+  padding-left: 25px;
+}
+/* line 217, ../sass/screen.scss */
+.search-form .search-btn {
+  background-color: #ffaf36;
+  margin-left: -5px;
+  margin-top: -5px;
+  width: 50px;
+  padding: 0;
+  font-size: 15px;
+  color: #1c1c1c;
+}
+
+/*╨Ъ╨╛╨╜╨╡╤Ж ╨╛╤Б╨╜╨╛╨▓╨╜╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ ╨┤╨╗╤П FAQ Page*/
+/*╨Э╨░╤З╨░╨╗╨╛ ╨╛╤Б╨╜╨╛╨▓╨╜╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ ╨┤╨╗╤П Contact-us Page*/
+/* line 232, ../sass/screen.scss */
+.contact-styl {
+  align-items: center;
+  color: #1c1c1c;
+  font-weight: 700;
+}
+/* line 236, ../sass/screen.scss */
+.contact-styl .info-btn {
+  color: #1c1c1c;
+}
+
+/* line 242, ../sass/screen.scss */
+.city-banner {
+  display: flex;
+  align-items: center;
+  min-height: 345px;
+  margin: 40px 0 100px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /*╨е╨╛╤А╨╛╤И╨╕╨╣ ╤Б╨┐╨╛╤Б╨╛╨▒ ╨╖╨░╤В╨╕╨╝╨╜╨╡╨╜╨╕╤П ╨║╨░╤А╤В╨╕╨╜╨╛╨║*/
+}
+/* line 248, ../sass/screen.scss */
+.city-banner .img-city-banner {
+  position: absolute;
+  z-index: -1;
+}
+/* line 252, ../sass/screen.scss */
+.city-banner .banner-text {
+  margin: 0 100px;
+}
+/* line 254, ../sass/screen.scss */
+.city-banner .banner-text h3 {
+  color: #ffaf36;
+}
+
+/* line 259, ../sass/screen.scss */
+.bg-light-blu {
+  background: #eaeff3;
+}
+
+/* line 262, ../sass/screen.scss */
+.contact-from {
+  padding-top: 100px;
+}
+
+/* line 265, ../sass/screen.scss */
+.contact-us-form {
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+/* line 268, ../sass/screen.scss */
+.contact-us-form .inp {
+  background-color: #eaeff3;
+  padding: 15px 0;
+  margin-top: 15px;
+  font: 14px/24px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-bottom: solid 1px #dce3e8;
+  width: 100%;
+}
+
+/*╨Ъ╨╛╨╜╨╡╤Ж ╨╛╤Б╨╜╨╛╨▓╨╜╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ ╨┤╨╗╤П Contact-us Page*/
