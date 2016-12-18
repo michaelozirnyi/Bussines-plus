@@ -1,0 +1,22 @@
+.text {
+  &-white {
+    color: #fff;
+  }
+
+  &-black {
+    color: $black;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.content-center {
+  width: 1140px;
+  margin: 0 auto;
+}

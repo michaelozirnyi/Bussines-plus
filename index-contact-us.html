@@ -5,31 +5,34 @@
     <title>Bussines plus</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:400,600,700|Raleway:400,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap/css/bootstrap-flex.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css" rel="stylesheet" type="text/css">
     <link href="css/screen.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="main-wrap">
+<div class="header-wrap">
     <img src="images/contact-us.png" class="head-img" alt="img">
-    <header class="header content-center">
-        <a href=""><img class="logo" src="images/logo.png" alt="BussinesPlus"></a>
-        <span class="white head-span">|</span>
-        <div class="phone">
-            <a href="tel:+9978 8856 999" class="white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
+
+    <header class="header piramids">
+        <div class="content-center">
+            <a href=""><img class="logo" src="images/logo.png" alt="BussinesPlus"></a>
+            <span class="text-white head-span">|</span>
+            <div class="phone">
+                <a href="tel:+9978 8856 999" class="text-white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
+            </div>
+            <nav class="upper nav flexes">
+                <ul class="main-nav">
+                    <li><a href="" class="nav text-white">Home</a></li>
+                    <li><a href="" class="nav text-white">About us</a></li>
+                    <li><a href="" class="nav text-white">services</a></li>
+                    <li><a href="" class="nav text-white">news</a></li>
+                    <li><a href="index-blog.html" class="nav text-white">blog</a></li>
+                    <li><a href="" class="nav text-white">pages</a></li>
+                    <li><a href="" class="nav text-white">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="upper nav flexes">
-            <ul class="main-nav">
-                <li><a href="" class="nav white">Home</a></li>
-                <li><a href="" class="nav white">About us</a></li>
-                <li><a href="" class="nav white">services</a></li>
-                <li><a href="" class="nav white">news</a></li>
-                <li><a href="index-blog.html" class="nav white">blog</a></li>
-                <li><a href="" class="nav white">pages</a></li>
-                <li><a href="" class="nav white">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
 </div>
 
@@ -38,7 +41,7 @@
         <p class="under-title">Feel free to contact us</p>
         <div class="flexes between-flex contact-styl">
             <div class="phone">
-                <a href="tel:+9978 8856 999" class="black"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
+                <a href="tel:+9978 8856 999" class="text-black"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
             </div>
             <button type="button" class="btn upper info-btn">info@businessplus.com</button>
         </div>
@@ -46,32 +49,35 @@
             <img src="images/canada-banner.jpg" class="img-city-banner">
             <div class="banner-text">
                 <h3 class="upper">Canada</h3>
-                <h6 class="white">100 Mission St, Canada street, Second flor 8878</h6>
+                <h6 class="text-white">100 Mission St, Canada street, Second flor 8878</h6>
             </div>
         </div>
     </div>
     <div class="bg-light-blu">
-        <div class="contact-from content-center">
+        <div class="contact-from piramids content-center">
+
             <h3 class="upper">Contact From</h3>
             <p class="under-title">Fill your requirments now</p>
-            <form action="#" class="contact-us-form upper flexes bold" name="form">
-                <input type="text" class="inp" placeholder="Name *">
-                <input type="email" class="inp" placeholder="Email Address *">
-                <input type="tel" class="inp" placeholder="Phone number *">
-                <select class="inp" title="Choose service">
-                    <option>Service *</option>
-                    <option>Consultation</option>
-                    <option>Proposition</option>
-                </select>
+            <form action="#" method="post" class="contact-us-form upper flexes bold" name="form">
+                <label><input type="text" name="name" class="inp" placeholder="Name *"></label>
+                <label><input type="email" name="email" class="inp" placeholder="Email Address *"></label>
+                <label><input type="tel" name="phone" class="inp" placeholder="Phone number *"></label>
+
                 <label>
-                    <textarea class="inp" cols="30" rows="7" placeholder="Message *"></textarea>
+                    <select class="inp" name="service" title="Choose service">
+                        <option value="1">Service *</option>
+                        <option value="2">Consultation</option>
+                        <option value="3">Proposition</option>
+                    </select>
                 </label>
+
+                <label>
+                    <textarea class="inp" name="message" cols="30" rows="7" placeholder="Message *"></textarea>
+                </label>
+
+                <button type="submit" class="btn upper">Submit now</button>
             </form>
-            <button type="submit" class="btn upper">Submit now</button>
-            <div class="piramids content-center">
-                <img src="images/blue-pyramid.png" class="blue-piramid">
-                <img src="images/yellow-pyramid.png" class="orange-piramid">
-            </div>
+
         </div>
     </div>
 
@@ -82,14 +88,14 @@
                     <img class="logo" src="images/logo.png" alt="BussinesPlus">
                     <p class="upper footer-color footer-date"> 2015 © lawyer.</p>
                     <div class="footer-social">
-                        <a href="" class=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="" class=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        <a href="" class=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="" class=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-xs">
-                    <h5 class="white upper">navigation</h5>
+                    <h5 class="text-white upper">navigation</h5>
                     <ul class="footer-menu upper">
                         <li><a href=""><div class="foot-nav-marker"></div>Home</a></li>
                         <li><a href=""><div class="foot-nav-marker"></div>About us</a></li>
@@ -100,8 +106,8 @@
                     </ul>
                 </div>
                 <div class="col-xs-6 contact-us">
-                    <h5 class="white upper contact-us">Quick contact us</h5>
-                    <form action="#" class="">
+                    <h5 class="text-white upper contact-us">Quick contact us</h5>
+                    <form action="#">
                         <table class="footer-table">
                             <tr>
                                 <td><input class="footer-form" type="text" placeholder="Name *"></td>

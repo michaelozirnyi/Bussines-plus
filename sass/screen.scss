@@ -1,29 +1,13 @@
-@import 'heder&footer';
+@import 'variables';
+@import 'header-footer';
+@import 'helper-classes';
 
-
-$font-open-sans: 'Open Sans', sans-serif;
-$font-lora: 'Lora', serif;
-$font-raleway: 'Raleway', sans-serif;
-
-$orange: #ffaf36;
-$black: #1c1c1c;
-$blue: #36a8ff;
-$footer-color: #8a8a8a;
-$footer-bg-color: #2a2b2c;
-$text-color: #585858;
-$footer-border-color: #373839;
-
-.white {
-  color: #fff;  }
-.black{
-  color: $black; }
-.bold {
-  font-weight: 700;  }
-.upper {
-  text-transform: uppercase;}
 a:hover {
   text-decoration: none;
-  color: $orange;}
+  color: $orange;
+  border-color: $orange;
+}
+
 .btn {
   height: 50px;
   padding-left: 30px;
@@ -35,11 +19,15 @@ a:hover {
   font-size: 13px;
   font-weight: 700;
   color: $orange;
+
   &:hover {
     color: $blue;
   }
 }
-h2 {  }
+
+h2 {
+}
+
 h3 {
   color: $black;
   font: 30px/24px $font-raleway;
@@ -50,24 +38,17 @@ h5 {
   font: 18px $font-raleway;
   font-weight: 900;
 }
-h6{
+
+h6 {
   font: 16px/24px $font-raleway;
   font-weight: 700;
   color: $black;
 }
 
-.main-wrap {
-  background-color: $black;
-  display: flex;
-  justify-content: center;
-}
-.content-center {
-  width: 1140px;
-  margin: 0 auto;
-}
 .main-content {
   margin-top: 100px;
 }
+
 .flexes {
   display: flex;
   flex-wrap: wrap;
@@ -78,43 +59,52 @@ h6{
 .between-flex {
   justify-content: space-between
 }
+
 .under-title {
   font-family: $font-open-sans;
   font: 16px/30;
   font-style: italic;
   font-weight: 400;
 }
+
 .portait {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .text-p {
   padding: 45px 0 60px 0;
   color: $text-color;
 }
+
 .all-posts {
   margin: 25px 0 35px 0;
   border-bottom: solid 1px #e6e9ee;
+
   .post {
     padding: 5px 0 70px 0;
     max-width: 1040px;
+
     .img-post {
       max-width: 1040px;
       max-height: 335px;
     }
   }
 }
+
 .author-post {
   color: #757575;
   font-size: 13px;
   font-weight: 600;
 }
+
 .share {
   margin: 20px 10px 0 0;
   font: $font-open-sans;
 }
+
 .soc-s {
   border-radius: 50%;
   width: 50px;
@@ -125,22 +115,28 @@ h6{
   font-size: 22px;
   font-weight: 400;
 }
+
 .faceb {
   background-color: #496fa5;
+
   &:hover {
     color: $blue;
     background-color: rgba(0, 0, 0, 0);
     border-right: solid 1px $blue;
   }
 }
+
 .twit {
   background-color: $blue;
+
   &:hover {
     @extend .faceb
   }
 }
+
 .goog {
   background-color: #eb4125;
+
   &:hover {
     @extend .faceb
   }
@@ -150,9 +146,11 @@ h6{
   display: flex;
   list-style-type: none;
   justify-content: center;
+
   li {
     text-decoration: none;
     margin: 0 5px;
+
     a {
       border: solid 2px $black;
       width: 50px;
@@ -160,18 +158,17 @@ h6{
       color: $black;
       font-size: 18px;
       font-weight: 400;
-      &:hover {
-        border-color: $orange;
-        color: $orange;
-      }
-      &:active {                          /*Как здесь правильно наследoвать Ховер??*/
+
+      &:hover,
+      &:active {
         border-color: $orange;
         color: $orange;
       }
     }
   }
 }
-.piramids{
+
+.piramids {
   display: flex;
   justify-content: flex-end;
   .blue-piramid {
@@ -187,24 +184,26 @@ h6{
     height: 70px;
   }
 }
+
 /*Конец основных стилей для BLOG Page*/
 
 /*Начало основных стилей для FAQ Page*/
 article {
-  column-count:2;                          /* Убрать ету строку и номерация - линейно, а не колонками*/
+  column-count: 2; /* Убрать ету строку и номерация - линейно, а не колонками*/
   padding: 40px 0 100px 0;
   ol {
     padding-left: 0;
     li {
       list-style: none;
-      /* display: flex; */      /*если сделать флексами- Бекграунд сжимается....?????????   */
+      /* display: flex; */
+      /*если сделать флексами- Бекграунд сжимается....?????????   */
 
       max-width: 530px;
       padding: 0 30px 70px 0;
       .num {
-                  /*!!!!!!! Неполучается стилизовать номерацию!!!!!!*/
-              /* transform: rotate(45deg);  поворачивает все, нужно только bg*/
-        
+        /*!!!!!!! Неполучается стилизовать номерацию!!!!!!*/
+        /* transform: rotate(45deg);  поворачивает все, нужно только bg*/
+
         margin-right: 25px;
         color: $black;
         background: $orange;
@@ -220,16 +219,17 @@ article {
     }
   }
 }
+
 .li-text {
 
 }
-
 
 .search-q {
   text-align: center;
   background-color: #eaeff3;
   padding-top: 100px;
 }
+
 .search-form {
   margin: 30px 0 60px 0;
   .search-window {
@@ -249,8 +249,8 @@ article {
     @extend .btn;
   }
 }
-/*Конец основных стилей для FAQ Page*/
 
+/*Конец основных стилей для FAQ Page*/
 
 /*Начало основных стилей для Contact-us Page*/
 .contact-styl {
@@ -263,29 +263,32 @@ article {
   }
 }
 
-.city-banner{
+.city-banner {
   display: flex;
   align-items: center;
   min-height: 345px;
   margin: 40px 0 100px 0;
-  background-color: rgba(0,0,0,.3);    /*Хороший способ затимнения картинок*/
-  .img-city-banner{
+  background-color: rgba(0, 0, 0, .3); /*Хороший способ затимнения картинок*/
+  .img-city-banner {
     position: absolute;
     z-index: -1;
   }
-  .banner-text{
+  .banner-text {
     margin: 0 100px;
     h3 {
       color: $orange;
     }
   }
 }
+
 .bg-light-blu {
   background: #eaeff3;
 }
+
 .contact-from {
   padding-top: 100px;
 }
+
 .contact-us-form {
   flex-direction: column;
   margin-bottom: 30px;
