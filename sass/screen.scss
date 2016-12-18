@@ -53,6 +53,7 @@ h5 {
 h6{
   font: 16px/24px $font-raleway;
   font-weight: 700;
+  color: $black;
 }
 
 .main-wrap {
@@ -193,13 +194,35 @@ article {
   column-count:2;                          /* Убрать ету строку и номерация - линейно, а не колонками*/
   padding: 40px 0 100px 0;
   ol {
-    flex-wrap: wrap;
+    padding-left: 0;
     li {
+      list-style: none;
+      /* display: flex; */      /*если сделать флексами- Бекграунд сжимается....?????????   */
+
       max-width: 530px;
-      padding-right: 30px;
+      padding: 0 30px 70px 0;
+      .num {
+                  /*!!!!!!! Неполучается стилизовать номерацию!!!!!!*/
+        transform: rotate(45deg);
+        margin-right: 25px;
+        color: $black;
+        background: $orange;
+        display: inline-block;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-left: 2px;
+      }
     }
   }
 }
+.li-text {
+
+}
+
 
 .search-q {
   text-align: center;
