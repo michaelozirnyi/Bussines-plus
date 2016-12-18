@@ -203,7 +203,8 @@ article {
       padding: 0 30px 70px 0;
       .num {
                   /*!!!!!!! Неполучается стилизовать номерацию!!!!!!*/
-        transform: rotate(45deg);
+              /* transform: rotate(45deg);  поворачивает все, нужно только bg*/
+        
         margin-right: 25px;
         color: $black;
         background: $orange;
