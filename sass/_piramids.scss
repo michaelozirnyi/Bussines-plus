@@ -1,0 +1,51 @@
+
+            /*parent mast have position: relative;
+            and with fixed width(.content-center)*/
+            /*add div with PIRAMIDS-class*/
+
+.pos-rel {
+  position: relative;
+}
+
+.blue-piramid-left {
+  width: 0;
+  height: 0;
+  border-left: 78px solid transparent;
+  border-right: 78px solid transparent;
+  border-bottom: 105px solid $blue;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+
+.orange-piramid-left {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid $orange;
+  position: absolute;
+  left: 85px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.blue-piramid-right {
+  left: auto;
+  right: 70px;
+  @extend .blue-piramid-left;
+}
+
+.orange-piramid-right {
+  left: auto;
+  right: 0;
+  @extend .orange-piramid-left;
+}
+
+
+  /* In FAQ Page/
+  .search-q-content{
+    padding-bottom: 100px;
+  }
+  */

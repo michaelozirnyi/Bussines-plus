@@ -5,31 +5,31 @@
     <title>Bussines plus</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:400,600,700|Raleway:400,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap/css/bootstrap-flex.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css" rel="stylesheet" type="text/css">
     <link href="css/screen.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
 <div class="header-wrap">
-    <img src="images/faq.png" class="head-img" alt="img">
+    <img src="images/faq.png" class="header-img" alt="img">
 
     <header class="header">
         <div class="content-center">
             <a href=""><img class="logo" src="images/logo.png" alt="BussinesPlus"></a>
-            <span class="text-white head-span">|</span>
+            <span class="text-color-white head-span">|</span>
             <div class="phone">
-                <a href="tel:+9978 8856 999" class="text-white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
+                <a href="tel:+9978 8856 999" class="text-color-white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
             </div>
             <nav class="upper nav flexes">
                 <ul class="main-nav">
-                    <li><a href="" class="nav text-white">Home</a></li>
-                    <li><a href="" class="nav text-white">About us</a></li>
-                    <li><a href="" class="nav text-white">services</a></li>
-                    <li><a href="" class="nav text-white">news</a></li>
-                    <li><a href="index-blog.html" class="nav text-white">blog</a></li>
-                    <li><a href="" class="nav text-white">pages</a></li>
-                    <li><a href="" class="nav text-white">Contact Us</a></li>
+                    <li><a href="#" class="nav text-color-white">Home</a></li>
+                    <li><a href="#" class="nav text-color-white">About us</a></li>
+                    <li><a href="#" class="nav text-color-white">services</a></li>
+                    <li><a href="#" class="nav text-color-white">news</a></li>
+                    <li><a href="index-blog.html" class="nav text-color-white">blog</a></li>
+                    <li><a href="index-faq.html" class="nav text-color-white">pages</a></li>
+                    <li><a href="index-contact-us.html" class="nav text-color-white">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -105,67 +105,68 @@
             </ol>
         </article>
     </div>
+
     <div class="search-q">
-        <h3 class="upper">Search questions</h3>
-        <p class="under-title">if you have any more question search here OR feel free to contact us</p>
-        <form action="#" class="search-form" name="search">
-            <input type="search" class="search-window" placeholder="Enter your questions here">
-            <button type="submit" class="search-btn btn"><i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-        </form>
-        <button type="button" class="btn upper">Contact us</button>
-        <div class="piramids content-center">
-            <img src="images/blue-pyramid.png" class="blue-piramid">
-            <img src="images/yellow-pyramid.png" class="orange-piramid">
+        <div class="search-q-content">
+            <h3 class="upper">Search questions</h3>
+            <p class="under-title">if you have any more question search here OR feel free to contact us</p>
+            <form action="#" class="search-form" name="search">
+                <input type="search" class="search-window" placeholder="Enter your questions here">
+                <button type="submit" class="search-btn btn"><i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <button type="button" class="btn upper">Contact us</button>
         </div>
+
+        <div class="pos-rel content-center">            <!-- Piramids-->
+            <div class="blue-piramid-right"></div>   <!-- Look at here!!!! -->
+            <div class="orange-piramid-right"></div>
+        </div>
+
     </div>
 
-    <footer class="footer">
-        <div class="container content-position">
-            <div class="row item-center">
-                <div class="col-xs">
-                    <img class="logo" src="images/logo.png" alt="BussinesPlus">
-                    <p class="upper footer-color footer-date"> 2015 © lawyer.</p>
-                    <div class="footer-social">
-                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="col-xs">
-                    <h5 class="text-white upper">navigation</h5>
-                    <ul class="footer-menu upper">
-                        <li><a href=""><div class="foot-nav-marker"></div>Home</a></li>
-                        <li><a href=""><div class="foot-nav-marker"></div>About us</a></li>
-                        <li><a href=""><div class="foot-nav-marker"></div>services</a></li>
-                        <li><a href=""><div class="foot-nav-marker"></div>tesimonial</a></li>
-                        <li><a href="index-blog.html"><div class="foot-nav-marker"></div>blog</a></li>
-                        <li><a href=""><div class="foot-nav-marker"></div>Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 contact-us">
-                    <h5 class="text-white upper contact-us">Quick contact us</h5>
-                    <form action="#">
-                        <table class="footer-table">
-                            <tr>
-                                <td><input class="footer-form" type="text" placeholder="Name *"></td>
-                                <td><input class="footer-form" type="email" placeholder="Email *"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <label>
-                                        <textarea class="comment-foot-form" cols="30" rows="" placeholder="Comment *"></textarea>
-                                    </label>
-                                </td>
-                            </tr>
-                        </table>
-                        <button type="submit" class="btn upper">Submit now</button>
-                    </form>
+<footer class="footer">
+    <div class="container content-position">
+        <div class="row flex-items-xs-between item-center">
+            <div class="col-xs-2">
+                <img class="logo" src="images/logo.png" alt="BussinesPlus">
+                <p class="upper footer-color footer-date"> 2015 © lawyer.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </div>
             </div>
+            <div class="col-xs-2">
+                <h5 class="text-color-white upper">navigation</h5>
+                <ul class="footer-menu upper">
+                    <li><a href="#"><div class="foot-nav-marker"></div>Home</a></li>
+                    <li><a href="#"><div class="foot-nav-marker"></div>About us</a></li>
+                    <li><a href="#"><div class="foot-nav-marker"></div>services</a></li>
+                    <li><a href="#"><div class="foot-nav-marker"></div>tesimonial</a></li>
+                    <li><a href="index-blog.html"><div class="foot-nav-marker"></div>blog</a></li>
+                    <li><a href="#"><div class="foot-nav-marker"></div>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-4 contact-us">
+                <h5 class="text-color-white upper contact-us">Quick contact us</h5>
+                <form action="#" method="post" class="footer-form">
+                    <div class="row">
+                        <input class="footer-input col-xs" type="text" placeholder="Name *">
+                        <input class="footer-input col-xs" type="email" placeholder="Email *">
+                    </div>
+                    <div class="row">
+                        <textarea class="comment-foot-form col-xs" cols="30" rows="" placeholder="Comment *"></textarea>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="btn footer-btn upper">Submit now</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 </html>
