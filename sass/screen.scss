@@ -222,7 +222,7 @@ article {
 
 .search-q {
   text-align: center;
-  background-color: #eaeff3;
+  background-color: $bgc-light-blu;
   padding-top: 100px;
 
   .search-q-content{
@@ -313,3 +313,15 @@ article {
 }
 
 /*End styles for Contact-us Page*/
+
+/*Start styles for Blog-post Page*/
+
+
+
+.post-comment {
+  background-color: $bgc-light-blu;
+
+}
+
+/*End styles for Blog-post Page*/
+

@@ -60,7 +60,7 @@
   margin-top: 16px;
 }
 
-/* line 66, ../sass/_header-footer.scss */
+/* line 65, ../sass/_header-footer.scss */
 .footer {
   background-color: #2a2b2c;
   padding: 70px 0 85px 0;
@@ -69,50 +69,50 @@
   font-weight: 600;
 }
 
-/* line 73, ../sass/_header-footer.scss */
+/* line 72, ../sass/_header-footer.scss */
 .item-center {
   align-items: center;
 }
 
-/* line 76, ../sass/_header-footer.scss */
+/* line 75, ../sass/_header-footer.scss */
 .footer-date {
   margin: 20px 0 40px 0;
   color: #8a8a8a;
 }
 
-/* line 80, ../sass/_header-footer.scss */
+/* line 79, ../sass/_header-footer.scss */
 .footer-social {
   margin-bottom: 10px;
 }
-/* line 82, ../sass/_header-footer.scss */
+/* line 81, ../sass/_header-footer.scss */
 .footer-social a {
   color: #8a8a8a;
   border: solid 1px #373839;
   text-decoration: none;
   padding: 5px;
 }
-/* line 87, ../sass/_header-footer.scss */
+/* line 86, ../sass/_header-footer.scss */
 .footer-social a i {
   text-align: center;
   width: 20px;
   font-size: 15px;
 }
 
-/* line 98, ../sass/_header-footer.scss */
+/* line 97, ../sass/_header-footer.scss */
 .footer-menu {
   padding: 0;
 }
-/* line 100, ../sass/_header-footer.scss */
+/* line 99, ../sass/_header-footer.scss */
 .footer-menu li {
   list-style-type: none;
   padding: 15px 0;
   border-bottom: solid 1px #373839;
 }
-/* line 104, ../sass/_header-footer.scss */
+/* line 103, ../sass/_header-footer.scss */
 .footer-menu li:last-child {
   border-bottom: none;
 }
-/* line 108, ../sass/_header-footer.scss */
+/* line 107, ../sass/_header-footer.scss */
 .footer-menu a {
   display: flex;
   flex-wrap: nowrap;
@@ -120,7 +120,7 @@
   color: #8a8a8a;
 }
 
-/* line 118, ../sass/_header-footer.scss */
+/* line 117, ../sass/_header-footer.scss */
 .foot-nav-marker {
   width: 0;
   height: 0;
@@ -131,12 +131,12 @@
   border-left-color: #ffaf36;
 }
 
-/* line 128, ../sass/_header-footer.scss */
+/* line 127, ../sass/_header-footer.scss */
 .contact-us h5 {
   padding-bottom: 35px;
 }
 
-/* line 133, ../sass/_header-footer.scss */
+/* line 132, ../sass/_header-footer.scss */
 .footer-input, .comment-foot-form {
   border: 1px solid #373839;
   color: #8a8a8a;
@@ -145,14 +145,14 @@
   margin: 0;
 }
 
-/* line 140, ../sass/_header-footer.scss */
+/* line 139, ../sass/_header-footer.scss */
 .comment-foot-form {
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 146, ../sass/_header-footer.scss */
+/* line 145, ../sass/_header-footer.scss */
 .footer-btn {
   margin-top: 10px;
 }
@@ -176,7 +176,7 @@
   text-transform: uppercase;
 }
 
-/* line 19, ../sass/_helper-classes.scss */
+/* line 20, ../sass/_helper-classes.scss */
 .content-center {
   width: 1140px;
   margin: 0 auto;
@@ -549,3 +549,10 @@ article ol li .num {
 }
 
 /*End styles for Contact-us Page*/
+/*Start styles for Blog-post Page*/
+/* line 321, ../sass/screen.scss */
+.post-comment {
+  background-color: #eaeff3;
+}
+
+/*End styles for Blog-post Page*/
