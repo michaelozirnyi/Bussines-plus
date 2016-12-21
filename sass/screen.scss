@@ -325,3 +325,35 @@ article {
 
 /*End styles for Blog-post Page*/
 
+/*Start styles for 404 Page*/
+.error-message {
+  text-align: center;
+  color: $black;
+  
+  .error-text {
+    margin: 230px auto 35px auto;
+    font: 72px $font-open-sans;
+    font-weight: 300;
+    line-height: 72px;
+    max-width: 400px;
+
+    span {
+      color: $blue;
+      font-weight: 700;
+    }
+  }
+  
+  .error-info {
+    background-color: $orange;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: 0 30px;
+    max-width: 450px;
+    margin: 0 auto 230px auto;
+
+    .text-error-info {
+      line-height: 30px;
+    }
+  }
+}
+/*End styles for 404 Page*/
