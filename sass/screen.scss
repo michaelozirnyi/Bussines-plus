@@ -84,17 +84,18 @@ h6 {
 .all-posts {
   margin: 25px 0 35px 0;
   border-bottom: solid 1px #e6e9ee;
+}
 
-  .post {
-    padding: 5px 0 70px 0;
+.post {
+  padding: 5px 0 70px 0;
+  max-width: 1040px;
+
+  .img-post {
     max-width: 1040px;
-
-    .img-post {
-      max-width: 1040px;
-      max-height: 335px;
-    }
+    max-height: 335px;
   }
 }
+
 
 .author-post {
   color: #757575;
@@ -316,16 +317,113 @@ article {
 
 /*Start styles for Blog-post Page*/
 
+.text-p-rm {
+  padding: 15px 0 15px 0;
+}
 
+.pink-quote {
+  margin-left: 100px;
+  background-color: #fef1de;
+  border-left: 4px solid $orange;
+  padding: 25px 45px;
+
+  .quote-text{
+    font-family: $font-lora;
+    font-size: 15px;
+    font-style: italic;
+    color: $black
+  }
+}
+
+.blue-post {
+  margin-bottom: 70px;
+
+  .img-blue-post {
+    width: 165px;
+    height: 195px;
+    margin-right: 20px;
+  }
+
+  .arrow-left {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid $blue;
+  }
+  .content-blue-post {
+    background-color: $blue;
+    max-width: 945px;
+
+    h6 {
+      padding: 40px 0 0 35px ;
+    }
+
+    p {
+      padding: 0 80px 40px 35px;
+    }
+  }
+}
+
+.author-post-comment {
+  color: $orange;
+  @extend .author-post;
+
+  .autor-post-name {
+    color: $black;
+    font-weight: 700;
+  }
+}
+
+.post-commentar {
+    width: 1000px;
+    padding-bottom: 35px;
+  @extend .post;
+}
+
+.portait-in-comment {
+  width: 83px;
+  height: 83px;
+  @extend .portait
+}
+
+.text-comment {
+  margin-bottom: 25px;
+}
+
+.mail-reply {
+  border: 1px solid $orange;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+  padding: 6px 9px;
+  color: $orange;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.w-comment {
+  margin-left: 150px;
+  width: 990px;
+
+  .w-post-commentar {
+    width: 860px;
+    padding-bottom: 80px;
+  }
+}
 
 .post-comment {
   background-color: $bgc-light-blu;
-
 }
 
 /*End styles for Blog-post Page*/
 
 /*Start styles for 404 Page*/
+
 .error-message {
   text-align: center;
   color: $black;
