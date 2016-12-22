@@ -55,6 +55,20 @@ h6 {
   display: flex;
   flex-wrap: wrap;
 }
+.flex-row {
+  flex-direction: row;
+}
+
+.align-i-center {
+  align-items: center;
+}
+
+.dir-reverse {
+  flex-direction: row-reverse;
+}
+
+
+
 
 /*Start styles for BLOG Page*/
 
@@ -271,7 +285,7 @@ article {
   align-items: center;
   min-height: 345px;
   margin: 40px 0 100px 0;
-  background-color: rgba(0, 0, 0, .3); /*good idea to darkness images */
+  background-color: rgba(0, 0, 0, .4); /*good idea to darkness images */
 
   .img-city-banner {
     position: absolute;
@@ -455,3 +469,42 @@ article {
   }
 }
 /*End styles for 404 Page*/
+
+/*Start styles for About-us Page*/
+
+.about-banner {
+  justify-content: center;
+  height: 400px;
+  @extend  .city-banner;
+
+  .banner-btn {
+    margin: 0 15px;
+  }
+}
+
+.views-post {
+  padding: 20px 0 30px 0;
+
+  .views-image {
+    height: 175px;
+    width: 265px;
+    background-color: $black;
+  }
+
+  .text-p-views {
+    margin-left: 50px;
+    color: $text-color;
+    max-width: 800px;
+  }
+
+  .text-p-views-reverse {
+    margin-right: 50px;
+    color: $text-color;
+    max-width: 800px;
+    text-align: end;
+  }
+}
+
+
+
+/*End styles for About-us Page*/
