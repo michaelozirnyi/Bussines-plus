@@ -505,6 +505,42 @@ article {
   }
 }
 
+.carousel {
+  position: relative;
+  margin-bottom: 100px;
 
+  .carousel-indicators {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      border-color: $blue;
+      background-color: $blue;
+    }
+
+    li.active {
+      border-color: $orange;
+      background-color: $orange;
+    }
+  }
+}
+
+.content-carousel {
+  margin: 40px 0 100px 0;
+}
+
+.client {
+  border: 1px solid #eaeff3;
+  width: 190px;
+  height: 190px;
+  margin: 0;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 190px;
+}
 
 /*End styles for About-us Page*/
