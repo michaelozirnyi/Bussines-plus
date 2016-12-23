@@ -541,3 +541,61 @@ article {
 }
 
 /*End styles for About-us Page*/
+
+/*Start styles for Careers Page*/
+
+.border-img {
+  position: relative;
+  width: 165px;
+  height: 160px;
+  margin:50px 60px 100px 100px;
+  border-image: url("../images/layer-border.png");
+  border: 10px solid $black;
+
+  .img-abs {
+    width: 165px;
+    height: 160px;
+    position: absolute;
+    top: -50px;
+    left: -110px;
+  }
+}
+.content-info {
+  padding-top: 30px;
+  max-width: 720px;
+}
+
+.offers {
+  padding: 50px 0 50px 0;
+
+  ul {
+    padding-left: 0;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+      max-width: 550px;
+      padding-bottom: 40px;
+
+      position: relative;
+    }
+  }
+
+  .li-text-offers {
+    padding-left: 100px;
+  }
+
+  .numb-icon {
+    font-size: 42px;
+    width: 45px;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+}
+
+
+
+
+
+/*End styles for Careers Page*/
