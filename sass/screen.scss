@@ -46,6 +46,9 @@ h6 {
   font-weight: 700;
   color: $black;
 }
+.thin {
+  font-weight: 400;
+}
 
 .main-content {
   margin-top: 100px;
@@ -594,8 +597,32 @@ article {
   }
 }
 
+.i-collapse {
+  color: $black;
+  border: 2px solid $black;
+  border-radius: 50%;
 
+}
 
+.card {
+  border: none;
+  border-bottom: 1px solid $footer-color;
+  border-radius: 0;
+  margin-bottom: 0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.card-header {
+  padding: 40px 0;
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.card-block {
+padding: 0;
+}
 
 
 /*End styles for Careers Page*/
