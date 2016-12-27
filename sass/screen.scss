@@ -51,7 +51,7 @@ h6 {
 }
 
 .main-content {
-  margin-top: 100px;
+  padding: 100px 0;
 }
 
 .flexes {
@@ -205,7 +205,7 @@ h6 {
 
 article {
   column-count: 2;
-  padding: 40px 0 100px 0;
+  padding-top: 40px;
 
   ol {
     padding-left: 0;
@@ -288,7 +288,7 @@ article {
   display: flex;
   align-items: center;
   min-height: 345px;
-  margin: 40px 0 100px 0;
+  margin-top: 40px;
   background-color: rgba(0, 0, 0, .4); /*good idea to darkness images */
 
   .img-city-banner {
@@ -631,20 +631,64 @@ padding: 0;
 
 /*End styles for Careers Page*/
 
+/*Start styles for News Page*/
 
 
 
-
-/*Start styles for Careers Page*/
-
-
-.post-news{
-display: flex;
-}
 .img-news {
   width: 360px;
   height: 250px;
-
+  margin: 0 30px 30px 0;
 }
 
-/*End styles for About-us Page*/
+.little-img-news {
+  width: 160px;
+  height: 100px;
+  margin-right: 30px;
+}
+
+.date {
+  display: table;
+  background-color: $orange;
+  height: 40px;
+  width: 145px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.arrow-white {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fff;
+  background-color: $orange;
+}
+
+.arrow-light-blue {
+  border-left: 20px solid $bgc-light-blu;
+
+  @extend .arrow-white;
+}
+
+
+.blue-quote {
+  background-color: #d1ebff;
+  border-left: 4px solid $blue;
+
+  p {
+    font-family: $font-open-sans;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 28px;
+    padding: 40px 90px 40px 55px;
+  }
+}
+
+.h6-news {
+  margin-bottom: 30px;
+}
+
+
+/*End styles for News Page*/
