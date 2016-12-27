@@ -555,7 +555,7 @@ article {
   position: relative;
   width: 165px;
   height: 160px;
-  margin:50px 60px 100px 100px;
+  margin:50px 60px 0 100px;
   border-image: url("../images/layer-border.png");
   border: 10px solid $black;
 
@@ -577,13 +577,11 @@ article {
 
   ul {
     padding-left: 0;
-    justify-content: space-between;
 
     li {
       list-style: none;
       max-width: 550px;
-      padding-bottom: 40px;
-
+      min-width: 35%;
       position: relative;
     }
   }
@@ -610,7 +608,7 @@ article {
 
 .card {
   border: none;
-  border-bottom: 1px solid $footer-color;
+  border-bottom: 1px solid $bgc-light-blu;
   border-radius: 0;
   margin-bottom: 0;
 
@@ -618,6 +616,7 @@ article {
     border-bottom: none;
   }
 }
+
 .card-header {
   padding: 40px 0;
   background-color: #fff;
@@ -625,15 +624,40 @@ article {
 }
 
 .card-block {
-padding: 0;
+  padding: 0;
+
+
+}
+.collapse-list {
+              /* column-count: 2;*/
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: flex;
+    max-width: 550px;
+    min-width: 300px;
+
+    h6 {
+      width: 195px;
+    }
+  }
 }
 
+.careers-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 36px;
+
+  span {
+    float: left;
+    margin-right: 25px;
+  }
+}
 
 /*End styles for Careers Page*/
 
 /*Start styles for News Page*/
-
-
 
 .img-news {
   width: 360px;
@@ -688,6 +712,7 @@ padding: 0;
 .h6-news {
   margin-bottom: 30px;
 }
+
 .news-list {
   list-style: none;
   padding-left: 0;
@@ -697,7 +722,6 @@ padding: 0;
   span {
     float: left;
     margin-right: 25px;
-
   }
 }
 
