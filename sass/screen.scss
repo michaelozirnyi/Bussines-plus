@@ -56,8 +56,12 @@ h6 {
 
 .flexes {
   display: flex;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
 }
+
 .flex-row {
   flex-direction: row;
 }
@@ -626,3 +630,21 @@ padding: 0;
 
 
 /*End styles for Careers Page*/
+
+
+
+
+
+/*Start styles for Careers Page*/
+
+
+.post-news{
+display: flex;
+}
+.img-news {
+  width: 360px;
+  height: 250px;
+
+}
+
+/*End styles for About-us Page*/
