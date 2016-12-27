@@ -672,23 +672,33 @@ padding: 0;
   @extend .arrow-white;
 }
 
-
 .blue-quote {
   background-color: #d1ebff;
   border-left: 4px solid $blue;
 
   p {
     font-family: $font-open-sans;
-    font-size: 14px;
     font-style: italic;
     line-height: 28px;
     padding: 40px 90px 40px 55px;
+    color: $black;
   }
 }
 
 .h6-news {
   margin-bottom: 30px;
 }
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 12px;
+  line-height: 30px;
 
+  span {
+    float: left;
+    margin-right: 25px;
+
+  }
+}
 
 /*End styles for News Page*/
