@@ -513,26 +513,21 @@ article {
   }
 }
 
-.carousel {
-  position: relative;
-  margin-bottom: 100px;
+.carousel-indicators {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
 
-  .carousel-indicators {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    display: flex;
+  li {
+    border-color: $blue;
+    background-color: $blue;
+  }
 
-    li {
-      border-color: $blue;
-      background-color: $blue;
-    }
-
-    li.active {
-      border-color: $orange;
-      background-color: $orange;
-    }
+  li.active {
+    border-color: $orange;
+    background-color: $orange;
   }
 }
 
@@ -817,3 +812,19 @@ article {
 }
 
 /*End styles for Services Page*/
+
+/*Start styles for Home Page*/
+
+.header-wrap-home {
+  height: 835px;
+
+  @extend .header-wrap;
+}
+
+.home-abou-text {
+  max-width: 650px;
+}
+
+
+
+/*End styles for Home Page*/
