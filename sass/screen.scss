@@ -315,20 +315,21 @@ article {
   flex-direction: column;
   padding-bottom: 30px;
 
-  .inp {
-    background-color: #eaeff3;
-    padding: 15px 0;
-    margin-top: 15px;
-    font: 14px/24px $font-open-sans;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: none;
-    border-bottom: solid 1px #dce3e8;
-    width: 100%;
-  }
   button {
     width: 150px;
   }
+}
+
+.inp {
+  background-color: #eaeff3;
+  padding: 15px 0;
+  margin-top: 15px;
+  font: 14px/24px $font-open-sans;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-bottom: solid 1px #dce3e8;
+  width: 100%;
 }
 
 /*End styles for Contact-us Page*/
@@ -725,4 +726,62 @@ article {
   }
 }
 
+
 /*End styles for News Page*/
+
+/*Start styles for Tesimonial Page*/
+
+.tes-cont {
+  position: relative;
+
+  .tes-text{
+    padding: 50px 50px 20px 50px;
+    position: absolute;
+    z-index: 2;
+    top: 65px;
+    left: 390px;
+    line-height: 28px;
+    background-color: #fff;
+    border: 1px solid $bgc-light-blu;
+  }
+
+  .paragraph {
+    position: relative;
+    margin-bottom: 0;
+
+    .i-start {
+      position: absolute;
+      top: -10px;
+      left: -25px;
+    }
+
+    .i-end {
+      transform: scale(-1, 1);
+      padding-right: 100% ;
+    }
+  }
+
+  .name {
+    margin: 0;
+  }
+}
+
+.tes-img {
+  width: 460px;
+  height: 350px;
+}
+
+.design {
+  color: $orange;
+}
+
+.inp-tes {
+  padding-left: 25px;
+  margin-right: 30px;
+  border: 1px solid #dce3e8;
+  background-color: transparent;
+  width: 550px;
+  @extend .inp;
+}
+
+/*End styles for Tesimonial Page*/
