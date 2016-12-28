@@ -70,6 +70,9 @@ h6 {
   align-items: center;
 }
 
+.just-c-sp-b {
+  justify-content: space-between;
+}
 .dir-reverse {
   flex-direction: row-reverse;
 }
@@ -785,3 +788,32 @@ article {
 }
 
 /*End styles for Tesimonial Page*/
+
+/*Start styles for Services Page*/
+
+
+.serv-image {
+  width: 205px;
+  height: 200px;
+}
+
+.cl-response {
+  margin: 50px 0 50px 0;
+  max-width: 330px;
+}
+
+.cl-img {
+  width: 70px;
+  height: 70px;
+  margin-right: 40px;
+}
+
+.mr-b {
+  margin-bottom: 50px;
+}
+
+.cl-name {
+  margin: 10px 0 0 0;
+}
+
+/*End styles for Services Page*/
