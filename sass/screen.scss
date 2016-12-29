@@ -221,17 +221,23 @@ article {
       position: relative;
 
       .num {
-        /* transform: rotate(45deg);  rotate all, but need only bg*/
         position: absolute;
-        transform: rotate(45deg);
-
-        background: $orange;
+        z-index: 3;
         text-align: center;
         width: 20px;
         height: 20px;
         font-size: 13px;
         font-weight: 700;
         line-height: 18px;
+      }
+
+      .bg-num {
+        position: absolute;
+        z-index: 2;
+        transform: rotate(45deg);
+        background: $orange;
+        width: 20px;
+        height: 20px;
       }
     }
   }
