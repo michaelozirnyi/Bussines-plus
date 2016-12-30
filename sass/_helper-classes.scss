@@ -20,6 +20,10 @@
   color: $orange;
 }
 
+.main-content {
+  padding: 100px 0;
+}
+
 .content-center {
   width: 1140px;
   margin: 0 auto;
@@ -27,4 +31,8 @@
 
 p {
   line-height: 28px;
+}
+
+.bg-light-blu {
+  background: $bgc-light-blu;
 }
