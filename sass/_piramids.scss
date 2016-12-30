@@ -1,51 +1,70 @@
 
-            /*parent mast have position: relative;
-            and with fixed width(.content-center)*/
-            /*add div with PIRAMIDS-class*/
+      /*Right piramids*/
 
-.pos-rel {
+.piramids-right {
   position: relative;
 }
 
-.blue-piramid-left {
+.piramids-right:before {
+  content: "";
+  display: block;
   width: 0;
   height: 0;
   border-left: 78px solid transparent;
   border-right: 78px solid transparent;
   border-bottom: 105px solid $blue;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   bottom: 0;
-  left: 0;
+  left: auto;
+  right: 70px;
 }
 
-.orange-piramid-left {
+.piramids-right:after {
+  content: "";
+  display: block;
   width: 0;
   height: 0;
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
   border-bottom: 70px solid $orange;
   position: absolute;
-  left: 85px;
   bottom: 0;
-  z-index: 2;
-}
-
-.blue-piramid-right {
-  left: auto;
-  right: 70px;
-  @extend .blue-piramid-left;
-}
-
-.orange-piramid-right {
+  z-index: 7;
   left: auto;
   right: 0;
-  @extend .orange-piramid-left;
 }
 
+      /*Left piramids*/
 
-  /* In FAQ Page/
-  .search-q-content{
-    padding-bottom: 100px;
-  }
-  */
+.piramids-left {
+  position: relative;
+}
+
+.piramids-left:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 78px solid transparent;
+  border-right: 78px solid transparent;
+  border-bottom: 105px solid $blue;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+}
+
+.piramids-left:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid $orange;
+  position: absolute;
+  bottom: 0;
+  z-index: 7;
+  left: 85px;
+}
