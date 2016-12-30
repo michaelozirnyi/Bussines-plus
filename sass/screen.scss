@@ -9,7 +9,6 @@ a:hover {
   border-color: $orange;
 }
 
-
 .btn {
   height: 50px;
   padding-left: 30px;
@@ -52,6 +51,10 @@ h6 {
 
 .main-content {
   padding: 100px 0;
+}
+
+.bg-light-blu {
+  background: $bgc-light-blu;
 }
 
 .flexes {
@@ -307,10 +310,6 @@ article {
   }
 }
 
-.bg-light-blu {
-  background: $bgc-light-blu;
-}
-
 .contact-us-form {
   flex-direction: column;
   padding-bottom: 30px;
@@ -448,7 +447,7 @@ article {
   color: $black;
   
   .error-text {
-    margin: 230px auto 35px auto;
+    margin: 130px auto 35px auto;
     font: 72px $font-open-sans;
     font-weight: 300;
     line-height: 72px;
@@ -466,7 +465,7 @@ article {
     font-size: 12px;
     padding: 0 30px;
     max-width: 450px;
-    margin: 0 auto 230px auto;
+    margin: 0 auto 130px auto;
 
     .text-error-info {
       line-height: 30px;
