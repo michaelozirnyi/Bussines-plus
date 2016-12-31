@@ -793,6 +793,21 @@ article {
   @extend .inp;
 }
 
+.quot {
+  position: relative;              /* How I must do quotes? */
+  z-index: 1;
+
+  span {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    opacity: 0.15;
+    color: $blue;
+    transform: scale(-1, 1);
+    font-size: 400px;
+  }
+}
+
 /*End styles for Tesimonial Page*/
 
 /*Start styles for Services Page*/
