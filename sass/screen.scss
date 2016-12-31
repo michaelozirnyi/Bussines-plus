@@ -312,7 +312,7 @@ article {
 }
 
 .inp {
-  background-color: #eaeff3;
+  background-color: $bgc-light-blu;
   padding: 15px 0;
   margin-top: 15px;
   font: 14px/24px $font-open-sans;
@@ -567,10 +567,11 @@ article {
 }
 
 .offers {
-  padding: 50px 0 50px 0;
+  padding-top: 50px;
 
   ul {
     padding-left: 0;
+    margin-bottom: 0;
 
     li {
       list-style: none;
@@ -656,13 +657,13 @@ article {
 .img-news {
   width: 360px;
   height: 250px;
-  margin: 0 30px 30px 0;
+  margin-right: 30px;
 }
 
 .little-img-news {
   width: 160px;
   height: 100px;
-  margin-right: 30px;
+  margin: 30px 30px 0 0;
 }
 
 .date {
