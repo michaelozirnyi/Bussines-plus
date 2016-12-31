@@ -667,28 +667,43 @@ article {
 }
 
 .date {
-  display: table;
   background-color: $orange;
   height: 40px;
   width: 145px;
   line-height: 40px;
   text-align: center;
-  margin-right: 30px;
+  margin: 0 30px 0 20px;
+  position: relative;
 }
 
-.arrow-white {
+.date:before {
+  content: "";
+  display: block;
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #fff;
-  background-color: $orange;
+  border-top: 10px solid $orange;
+  border-right: 10px solid $orange;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: -20px;
 }
 
-.arrow-light-blue {
-  border-left: 20px solid $bgc-light-blu;
-
-  @extend .arrow-white;
+.date:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid $orange;
+  border-left: 10px solid transparent;
+  border-right: 10px solid $orange;
+  position: absolute;
+  z-index: 4;
+  top: 20px;
+  left: -20px;
 }
 
 .blue-quote {
