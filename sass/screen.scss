@@ -26,6 +26,10 @@ a:hover {
   }
 }
 
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
 h2 {
 }
 
@@ -41,7 +45,8 @@ h5 {
 }
 
 h6 {
-  font: 16px/24px $font-raleway;
+  font: 16px $font-raleway;
+  line-height: 24px;
   font-weight: 700;
   color: $black;
 }
@@ -847,10 +852,76 @@ article {
   @extend .header-wrap;
 }
 
+.slider-home {
+  padding-top: 200px;
+  color: #fff;
+  position: relative;
+  max-width: 510px;
+
+
+  .p-rel {
+    font-family: $font-raleway;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+  
+  button {
+    color: $black;
+    background-color: $orange;
+  }
+}
+
 .home-abou-text {
   max-width: 650px;
 }
 
+.list {
+  list-style: none;
+  margin-top: 70px;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    max-width: 540px;
+
+    margin-bottom: 60px;
+
+    .info-li {
+      max-width: 420px;
+    }
+
+    &:hover::before {
+      content: "";
+      width: 15px;
+      height: 2px;
+      background-color: $blue;
+      position: absolute;
+      top: -10px;
+      left: 100px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
+
+.h-serv-icon {
+  margin-right: 40px;
+  width: 60px;
+  height: 60px;
+}
 
 
 /*End styles for Home Page*/
+

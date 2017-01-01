@@ -13,30 +13,47 @@
     <link href="css/screen.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<div class="header-wrap-home">
-    <img src="images/layer-home.png" class="header-img" alt="img">
+    <div class="header-wrap-home">
+        <img src="images/layer-home.png" class="header-img" alt="img">
 
-    <header class="header">
-        <div class="content-center">
-            <a href=""><img class="logo" src="images/logo.png" alt="BussinesPlus"></a>
-            <span class="text-color-white head-span">|</span>
-            <div class="phone">
-                <a href="tel:+9978 8856 999" class="text-color-white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
+        <header class="header">
+            <div class="content-center">
+                <a href=""><img class="logo" src="images/logo.png" alt="BussinesPlus"></a>
+                <span class="text-color-white head-span">|</span>
+                <div class="phone">
+                    <a href="tel:+9978 8856 999" class="text-color-white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
+                </div>
+                <nav class="upper nav flexes">
+                    <ul class="main-nav">
+                        <li><a href="#" class="nav text-color-white">Home</a></li>
+                        <li><a href="index-about-us.html" class="nav text-color-white">About us</a></li>
+                        <li><a href="#" class="nav text-color-white">services</a></li>
+                        <li><a href="#" class="nav text-color-white">news</a></li>
+                        <li><a href="index-blog.html" class="nav text-color-white">blog</a></li>
+                        <li><a href="index-faq.html" class="nav text-color-white">pages</a></li>
+                        <li><a href="index-contact-us.html" class="nav text-color-white">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="upper nav flexes">
-                <ul class="main-nav">
-                    <li><a href="#" class="nav text-color-white">Home</a></li>
-                    <li><a href="index-about-us.html" class="nav text-color-white">About us</a></li>
-                    <li><a href="#" class="nav text-color-white">services</a></li>
-                    <li><a href="#" class="nav text-color-white">news</a></li>
-                    <li><a href="index-blog.html" class="nav text-color-white">blog</a></li>
-                    <li><a href="index-faq.html" class="nav text-color-white">pages</a></li>
-                    <li><a href="index-contact-us.html" class="nav text-color-white">Contact Us</a></li>
-                </ul>
-            </nav>
+        </header>
+
+
+        <div class="content-center">
+
+            <!-- Here must be slider-->
+
+            <div class="slider-home">
+                <p class="upper p-rel">Welcome to</p>
+                <h1 class="upper">Business plus</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                <button type="button" class="btn upper">read more</button>
+            </div>
+
+
         </div>
-    </header>
-</div>
+    </div>
+
 
 
     <div class="main-content content-center flexes flex-wrap just-c-sp-b">
@@ -54,12 +71,44 @@
     </div>
 
     <div class="bg-light-blu">
-        <div class="main-content content-center">
-            <h3 class="upper">Service</h3>
+        <div class="main-content content-center piramids-right">
+            <h3 class="upper d">Services</h3>
             <p class="under-title">What we are doing</p>
-
-            
-            <!-- Here will be piramids -->
+            <ul class="flexes flex-wrap just-c-sp-b list">
+                <li class="flexes flex-wrap">
+                    <img class="h-serv-icon" src="images/boosting-your-business-icon.png" alt="image">
+                    <div class="info-li">
+                        <h6 class="upper">Boosting your business</h6>
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry
+                            Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div>
+                </li>
+                <li class="flexes flex-wrap">
+                    <img class="h-serv-icon" src="images/oline-support-icon.png" alt="image">
+                    <div class="info-li">
+                        <h6 class="upper">Online support</h6>
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry
+                            Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div>
+                </li>
+                <li class="flexes flex-wrap">
+                    <img class="h-serv-icon" src="images/analyzing-icon.png" alt="image">
+                    <div class="info-li">
+                        <h6 class="upper">analyzing business strategy</h6>
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry
+                            Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div>
+                </li>
+                <li class="flexes flex-wrap">
+                    <img class="h-serv-icon" src="images/clock-icon.png" alt="image">
+                    <div class="info-li">
+                        <h6 class="upper">Time managment</h6>
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry
+                            Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="btn upper">view more</button>
         </div>
     </div>
 
@@ -193,12 +242,12 @@
         <div class="main-content content-center">
             <h3 class="upper">News</h3>
             <p class="under-title">From Our Blog</p>
-
+            
 
         </div>
     </div>
 
-    <div class="main-content content-center">
+    <div class="main-content content-center piramids-right">
         <h3 class="upper">Partners</h3>
         <p class="under-title">Our Great Partners</p>
         <div class="carousel slide" data-ride="carousel">  <!-- id="carousel-example-generic" -->
@@ -276,56 +325,57 @@
                 </div>
             </div>
         </div>
-
-        <!-- Here will be piramids -->
     </div>
 
-<footer class="footer">
-    <div class="container content-position">
-        <div class="row flex-items-xs-between item-center">
-            <div class="col-xs-2">
-                <img class="logo" src="images/logo.png" alt="BussinesPlus">
-                <p class="upper footer-color footer-date"> 2015 © lawyer.</p>
-                <div class="footer-social">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+
+
+    <footer class="footer">
+        <div class="container content-position">
+            <div class="row flex-items-xs-between item-center">
+                <div class="col-xs-2">
+                    <img class="logo" src="images/logo.png" alt="BussinesPlus">
+                    <p class="upper footer-color footer-date"> 2015 © lawyer.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <h5 class="text-color-white upper">navigation</h5>
+                    <ul class="footer-menu upper">
+                        <li><a href="#"><div class="foot-nav-marker"></div>Home</a></li>
+                        <li><a href="#"><div class="foot-nav-marker"></div>About us</a></li>
+                        <li><a href="#"><div class="foot-nav-marker"></div>services</a></li>
+                        <li><a href="#"><div class="foot-nav-marker"></div>tesimonial</a></li>
+                        <li><a href="index-blog.html"><div class="foot-nav-marker"></div>blog</a></li>
+                        <li><a href="index-contact-us.html"><div class="foot-nav-marker"></div>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 contact-us">
+                    <h5 class="text-color-white upper contact-us">Quick contact us</h5>
+                    <form action="#" method="post" class="footer-form">
+                        <div class="row">
+                            <input class="footer-input col-xs" type="text" placeholder="Name *">
+                            <input class="footer-input col-xs" type="email" placeholder="Email *">
+                        </div>
+                        <div class="row">
+                            <textarea class="comment-foot-form col-xs" cols="30" rows="" placeholder="Comment *"></textarea>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn footer-btn upper">Submit now</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="col-xs-2">
-                <h5 class="text-color-white upper">navigation</h5>
-                <ul class="footer-menu upper">
-                    <li><a href="#"><div class="foot-nav-marker"></div>Home</a></li>
-                    <li><a href="#"><div class="foot-nav-marker"></div>About us</a></li>
-                    <li><a href="#"><div class="foot-nav-marker"></div>services</a></li>
-                    <li><a href="#"><div class="foot-nav-marker"></div>tesimonial</a></li>
-                    <li><a href="index-blog.html"><div class="foot-nav-marker"></div>blog</a></li>
-                    <li><a href="index-contact-us.html"><div class="foot-nav-marker"></div>Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 contact-us">
-                <h5 class="text-color-white upper contact-us">Quick contact us</h5>
-                <form action="#" method="post" class="footer-form">
-                    <div class="row">
-                        <input class="footer-input col-xs" type="text" placeholder="Name *">
-                        <input class="footer-input col-xs" type="email" placeholder="Email *">
-                    </div>
-                    <div class="row">
-                        <textarea class="comment-foot-form col-xs" cols="30" rows="" placeholder="Comment *"></textarea>
-                    </div>
-                    <div class="row">
-                        <button type="submit" class="btn footer-btn upper">Submit now</button>
-                    </div>
-                </form>
-            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/tether/dist/js/tether.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
