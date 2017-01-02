@@ -922,6 +922,72 @@ article {
   height: 60px;
 }
 
+.p-inside {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.news-info {
+  margin-right: 30px;
+  width: 70px;
+  text-align: right;
+  font-weight: 400;
+
+  span {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+  .bord-line {
+    border-bottom: 1px solid $orange;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bord-line:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    bottom: -1px;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    background: $black;
+  }
+}
+
+.main-info {
+  max-width: 455px;
+  margin-right: 50px;
+
+  img {
+    margin-bottom: 40px;
+  }
+}
+
+.inf {
+  max-width: 535px;
+
+  .btn {
+    margin-top: 30px;
+  }
+
+  .record {
+    border-bottom: 1px solid #d8dcdf;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+  }
+
+  .p-date {
+    font-size: 12px;
+    font-weight: 700;
+    color: $orange;
+  }
+}
 
 /*End styles for Home Page*/
 
