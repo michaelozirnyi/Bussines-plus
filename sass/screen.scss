@@ -635,11 +635,15 @@ article {
 
   li {
     display: flex;
-    max-width: 550px;
-    min-width: 300px;
+    flex-wrap: wrap;
+    width: 550px;
 
     h6 {
       width: 195px;
+    }
+
+    p, ul {
+      max-width: 300px;
     }
   }
 }
@@ -858,7 +862,6 @@ article {
   position: relative;
   max-width: 510px;
 
-
   .p-rel {
     font-family: $font-raleway;
     font-size: 16px;
@@ -966,6 +969,8 @@ article {
 
   img {
     margin-bottom: 40px;
+    width: 455px;
+    height: 220px;
   }
 }
 
