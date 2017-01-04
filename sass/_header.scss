@@ -1,0 +1,61 @@
+.header {
+  font: $font-open-sans;
+  font-size: 14px;
+  font-weight: 600;
+  height: 95px;
+  padding-top: 25px;
+  position: relative;
+  border-bottom: 1px solid rgba(221, 228, 234, 0.15);
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+  }
+
+  &-wrap {
+    overflow: hidden;
+    position: relative;
+    background-color: $black;
+    height: 395px;
+  }
+
+  .content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding-top: 5px;
+  }
+
+  .phone {
+    font-weight: 400;
+    margin-top: 17px;
+  }
+
+  .main-nav {
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 16px;
+
+    li {
+      display: inline;
+
+      &:nth-child(n+1) {
+        margin: 0 20px 0 25px;
+      }
+
+      &:active {
+        color: $orange;
+      }
+    }
+  }
+
+  .head-span {
+    font-weight: 400;
+    margin-top: 16px;
+  }
+}
