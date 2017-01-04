@@ -899,10 +899,11 @@ article {
 }
 
 .slider-home {
-  padding-top: 200px;
+  padding: 200px 0 ;
   color: #fff;
   position: relative;
   max-width: 510px;
+
 
   .p-rel {
     font-family: $font-raleway;
@@ -918,6 +919,66 @@ article {
     margin-bottom: 60px;
   }
 }
+
+.carousel {
+position: relative;
+
+  .carousel-indicators {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+
+    li {
+       background-color: #8f8f8f;
+       border-color:  #8f8f8f;
+       width: 25px;
+       height: 4px;
+       border-radius: 0;
+       margin: 0;
+     }
+
+    .active {
+      background-color: $orange;
+      border-color: $orange;
+      margin-top: 0;
+      border-radius: 0;
+    }
+  }
+
+
+  .cl-carousel {
+
+    left: 0;
+    width: 40px;
+
+    @extend .carousel-indicators;
+
+    li {
+      background-color: $blue;
+      border-color:  $blue;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0;
+    }
+
+    .active {
+      background-color: $orange;
+      border-color: $orange;
+      margin-top: 0;
+      border-radius: 50%;
+    }
+
+  }
+}
+
+
 
 .home-abou-text {
   max-width: 650px;
