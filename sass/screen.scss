@@ -279,6 +279,8 @@ article {
   }
 }
 
+
+
 /*End styles for FAQ Page*/
 
 /*Start styles for Contact-us Page*/
@@ -295,16 +297,20 @@ article {
 }
 
 .city-banner {
+  position: relative;
   display: flex;
   align-items: center;
-  min-height: 345px;
+  height: 345px;
   margin-top: 40px;
   background-color: rgba(0, 0, 0, .4); /*good idea to darkness images */
 
   .img-city-banner {
+    padding: 0;
     position: absolute;
     z-index: -1;
+    left: 0; /* Problem with heigh and width in different screen size*/
   }
+
   .banner-text {
     margin: 0 100px;
     h3 {
@@ -492,7 +498,7 @@ article {
   @extend  .city-banner;
 
   .banner-btn {
-    margin: 0 15px;
+    margin: 20px 15px 0;
   }
 }
 

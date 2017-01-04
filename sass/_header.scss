@@ -1,6 +1,6 @@
 .header {
   font: $font-open-sans;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   height: 95px;
   padding-top: 25px;
@@ -21,31 +21,47 @@
     height: 395px;
   }
 
-  .content-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .logo {
     padding-top: 5px;
+    max-width: 100%;
   }
 
   .phone {
     font-weight: 400;
     margin-top: 17px;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 1px;
+      height: 22px;
+      background-color: $footer-color;
+      position: absolute;
+      top:0;
+      left: 0;
+    }
   }
 
   .main-nav {
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 16px;
+    margin-right: 0;
+
+    ul {
+      margin-top: 16px;
+      padding-left: 0;
+      min-width: 100%;
+      text-align: center;
+    }
 
     li {
       display: inline;
+      margin: 0 21px 0 22px;
 
-      &:nth-child(n+1) {
-        margin: 0 20px 0 25px;
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
 
       &:active {
@@ -57,5 +73,52 @@
   .head-span {
     font-weight: 400;
     margin-top: 16px;
+  }
+}
+
+
+
+
+@media (min-width: 991px) {
+
+  .main-nav {
+    margin-left: auto;
+    margin-right: 0;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .main-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .phone {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .phone {
+    margin-left: auto;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .phone {
+    margin-left: 0;
+  }
+  .main-nav {
+    width: 500px;
+    margin-left: 0;
   }
 }
