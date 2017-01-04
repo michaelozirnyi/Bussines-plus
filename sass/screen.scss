@@ -26,6 +26,11 @@ a:hover {
   }
 }
 
+.btn-or-black {
+  color: $black;
+  background-color: $orange;
+}
+
 h1 {
   font-size: 60px;
   font-weight: 700;
@@ -550,20 +555,21 @@ article {
 
 /*Start styles for Careers Page*/
 
-.border-img {
+.careers-imgs {
   position: relative;
-  width: 165px;
-  height: 160px;
-  margin:50px 60px 0 100px;
-  border-image: url("../images/layer-border.png");
-  border: 10px solid $black;
+
+  .border-img {
+    width: 165px;
+    height: 160px;
+    margin:50px 60px 0 100px;
+  }
 
   .img-abs {
     width: 165px;
     height: 160px;
     position: absolute;
-    top: -50px;
-    left: -110px;
+    top: 0;
+    left: 0;
   }
 }
 .content-info {
@@ -599,11 +605,24 @@ article {
   }
 }
 
-.i-collapse {
-  color: $black;
-  border: 2px solid $black;
-  border-radius: 50%;
+.collapsed {
 
+  i {
+    color: $black;
+    border: 2px solid $black;
+    transform: rotate(0deg);
+  }
+}
+
+.i-collapse {
+  color: $blue;
+  border: 2px solid $blue;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  transform: rotate(90deg);
 }
 
 .card {
@@ -626,8 +645,13 @@ article {
 .card-block {
   padding: 0;
 
-
+  button {
+    display: block;
+    margin-bottom: 40px;
+    margin-left: auto;
+  }
 }
+
 .collapse-list {
               /* column-count: 2;*/
   list-style: none;
@@ -747,12 +771,13 @@ article {
 
 /*End styles for News Page*/
 
-/*Start styles for Tesimonial Page*/
+/*Start styles for Testimonial Page*/
 
 .tes-cont {
   position: relative;
 
   .tes-text{
+    max-width: 750px;
     padding: 50px 50px 20px 50px;
     position: absolute;
     z-index: 2;
@@ -816,6 +841,16 @@ article {
     font-size: 400px;
   }
 }
+/*.quot:after {
+  content: "❝";  ( U+275D  or  &#10077; )    not work!
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  opacity: 0.15;
+  color: $blue;
+  transform: scale(-1, 1);
+  font-size: 400px;
+}                               */
 
 /*End styles for Tesimonial Page*/
 
@@ -874,11 +909,6 @@ article {
     font-style: italic;
     line-height: 30px;
     margin-bottom: 60px;
-  }
-  
-  button {
-    color: $black;
-    background-color: $orange;
   }
 }
 
