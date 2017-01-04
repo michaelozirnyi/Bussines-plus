@@ -1,6 +1,5 @@
 .footer {
   background-color: $footer-bg-color;
-  padding: 70px 0 85px 0;
   font: $font-open-sans;
   font-size: 13px;
   font-weight: 600;
@@ -16,17 +15,20 @@
 }
 
 .footer-social {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   a {
+    display: inline-block;
     color: $footer-color;
     border: solid 1px $footer-border-color;
     text-decoration: none;
     padding: 5px;
+    margin-bottom: 3px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 
     i {
-      text-align: center;
-      width: 20px;
       font-size: 15px;
     }
 
