@@ -525,23 +525,7 @@ article {
   }
 }
 
-.carousel-indicators {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  display: flex;
 
-  li {
-    border-color: $blue;
-    background-color: $blue;
-  }
-
-  li.active {
-    border-color: $orange;
-    background-color: $orange;
-  }
-}
 
 .content-carousel {
   margin: 40px 0 100px 0;
@@ -849,7 +833,7 @@ article {
   }
 }
 /*.quot:after {
-  content: "❝";  ( U+275D  or  &#10077; )    not work!
+  content: "❝";  ( U+275D  or  &#10077; )    not work!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   position: absolute;
   top: 100px;
   right: 40px;
@@ -921,16 +905,17 @@ article {
 }
 
 .carousel {
-position: relative;
+  position: relative;
 
   .carousel-indicators {
     position: absolute;
     z-index: 5;
     bottom: 0;
-    left: 50%;
+    right: 0;
     width: 100px;
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
+
+
     padding: 0;
     list-style: none;
 
@@ -940,7 +925,7 @@ position: relative;
        width: 25px;
        height: 4px;
        border-radius: 0;
-       margin: 0;
+       margin: 0 1px;
      }
 
     .active {
@@ -953,11 +938,12 @@ position: relative;
 
 
   .cl-carousel {
-
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    display: flex;
     left: 0;
-    width: 40px;
-
-    @extend .carousel-indicators;
+    width: 48px;
 
     li {
       background-color: $blue;
@@ -965,7 +951,7 @@ position: relative;
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      margin: 0;
+      margin: 0 3px;
     }
 
     .active {
