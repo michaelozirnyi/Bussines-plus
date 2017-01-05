@@ -219,11 +219,12 @@ article {
     padding-left: 0;
 
     li {
+      position: relative;
       list-style: none;
       display: flex;
-      max-width: 530px;
-      padding: 5px 30px 70px 5px;
-      position: relative;
+      /*max-width: 530px;*/
+      padding: 5px 0 70px 0;
+
 
       .num {
         position: absolute;
@@ -234,6 +235,7 @@ article {
         font-size: 13px;
         font-weight: 700;
         line-height: 18px;
+        left: 30px;
       }
 
       .num:before {
@@ -250,12 +252,15 @@ article {
   }
 }
 
-.li-text {
-  padding-left: 45px;
+@media (max-width: 768px) {
+
+  article {
+    column-count: 1;
+  }
 }
 
-.search-q {
-  text-align: center;
+.li-text {
+  padding: 0 20px 0 55px;
 }
 
 .search-form {
@@ -277,7 +282,29 @@ article {
     color: $black;
     @extend .btn;
   }
+
+  @media (max-width: 991px) {
+
+    .search-window {
+      width: 600px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .search-window {
+      width: 480px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .search-window {
+      width: 430px;
+    }
+  }
 }
+
 
 
 
@@ -308,7 +335,7 @@ article {
     padding: 0;
     position: absolute;
     z-index: -1;
-    left: 0; /* Problem with heigh and width in different screen size*/
+    left: 0;
   }
 
   .banner-text {
@@ -318,6 +345,29 @@ article {
     }
   }
 }
+
+@media (max-width: 1199px) {
+
+  .city-banner {
+    height: 290px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .city-banner {
+    height: 215px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .city-banner {
+    height: 165px;
+  }
+}
+
+
 
 .contact-us-form {
   flex-direction: column;
@@ -495,10 +545,32 @@ article {
 .about-banner {
   justify-content: center;
   height: 400px;
+
   @extend  .city-banner;
 
   .banner-btn {
     margin: 20px 15px 0;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .about-banner {
+    height: 337px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .about-banner {
+    height: 255px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-banner {
+    height: 190px;
   }
 }
 
@@ -507,21 +579,27 @@ article {
 
   .views-image {
     height: 175px;
-    width: 265px;
+    max-width: 265px;
     background-color: $black;
   }
 
   .text-p-views {
-    margin-left: 50px;
     color: $text-color;
-    max-width: 800px;
+
+    &-reverse {
+      text-align: end;
+    }
   }
 
-  .text-p-views-reverse {
-    margin-right: 50px;
-    color: $text-color;
-    max-width: 800px;
-    text-align: end;
+  @media (max-width: 991px) {
+
+    .text-p-views {
+      text-align: center;
+
+      &-reverse {
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -681,13 +759,12 @@ article {
 .img-news {
   width: 360px;
   height: 250px;
-  margin-right: 30px;
 }
 
 .little-img-news {
   width: 160px;
   height: 100px;
-  margin: 30px 30px 0 0;
+  margin-top: 30px;
 }
 
 .date {
@@ -811,11 +888,17 @@ article {
 
 .inp-tes {
   padding-left: 25px;
-  margin-right: 30px;
   border: 1px solid #dce3e8;
   background-color: transparent;
   width: 550px;
   @extend .inp;
+}
+
+@media (max-width: 1200px) {
+
+  .inp-tes {
+   width: 450px;
+  }
 }
 
 .quot {

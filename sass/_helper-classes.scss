@@ -6,6 +6,9 @@
   &-black {
     color: $black;
   }
+  &-ali-cent {
+    text-align: center;
+  }
 }
 
 .bold {
@@ -27,8 +30,8 @@
 .container {
   padding-left: 0;
   padding-right: 0;
-  width: 1140px;
 }
+
 p {
   line-height: 28px;
 }
@@ -36,11 +39,3 @@ p {
 .bg-light-blu {
   background: $bgc-light-blu;
 }
-
-
-
-/*УДАЛИТЬ*/
-/* .content-center {
-  width: 1140px;
-  margin: 0 auto;
-} */

@@ -99,24 +99,34 @@
     margin-right: auto;
   }
 
-  .phone {
-    margin-left: auto;
+  .header {
+    .phone {
+      margin-left: auto;
+    }
   }
 }
 
 @media (max-width: 768px) {
 
-  .phone {
-    margin-left: auto;
-    padding-right: 0;
+  .header {
+    .phone {
+      margin-left: auto;
+      padding-right: 0;
+    }
   }
 }
 
 @media (max-width: 575px) {
 
-  .phone {
+  /*.header {
+    .phone {
+      margin-left: auto;
+      padding-right: 0;
+    }
+  }*/
+  /*.phone {
     margin-left: 0;
-  }
+  }*/
   .main-nav {
     width: 500px;
     margin-left: 0;
