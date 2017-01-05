@@ -118,14 +118,39 @@ h6 {
 }
 
 .post {
-  padding: 5px 0 70px 0;
-  max-width: 1040px;
+  padding: 5px 15px 70px 15px;
 
   .img-post {
-    max-width: 1040px;
-    max-height: 335px;
+    width: 1040px;
+    height: 335px;
   }
 }
+
+@media (max-width: 1199px) {
+
+  .img-post {
+    max-width: 850px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .img-post {
+    max-width: 570px;
+    max-height: 165px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .img-post {
+    max-width: 485px;
+    max-height: 145px;
+  }
+}
+
+
 
 .author-post {
   color: #757575;
@@ -467,15 +492,16 @@ article {
 }
 
 .post-commentar {
-    max-width: 1000px;
+
     padding-bottom: 35px;
-  @extend .post;
 }
 
 .portait-in-comment {
   width: 83px;
   height: 83px;
-  @extend .portait
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 40px;
 }
 
 .text-comment {
