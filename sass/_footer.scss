@@ -45,6 +45,20 @@
     list-style-type: none;
     padding: 15px 0;
     border-bottom: solid 1px $footer-border-color;
+    position: relative;
+
+    a {
+      &:before {
+        position: relative;
+        content: "";
+        width: 0;
+        height: 0;
+        padding-right: 10px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid $orange;
+      }
+    }
 
     &:last-child {
       border-bottom: none;
@@ -61,16 +75,6 @@
       @extend a:hover
     }
   }
-}
-
-.foot-nav-marker {
-  width: 0;
-  height: 0;
-  padding-right: 10px;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid $orange;
-
 }
 
 .contact-us {
