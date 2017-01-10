@@ -1,6 +1,5 @@
 .header {
-  font: $font-open-sans;
-  font-size: 13px;
+  font: 13px $font-open-sans;
   font-weight: 600;
   height: 95px;
   padding-top: 25px;
@@ -74,6 +73,10 @@
     font-weight: 400;
     margin-top: 16px;
   }
+
+  .active {
+    color: $orange;
+  }
 }
 
 
@@ -117,16 +120,6 @@
 }
 
 @media (max-width: 575px) {
-
-  /*.header {
-    .phone {
-      margin-left: auto;
-      padding-right: 0;
-    }
-  }*/
-  /*.phone {
-    margin-left: 0;
-  }*/
   .main-nav {
     width: 500px;
     margin-left: 0;

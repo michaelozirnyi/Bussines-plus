@@ -17,8 +17,7 @@ a:hover {
   border: 2px solid $orange;
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
-  font: $font-raleway;
-  font-size: 13px;
+  font: 13px $font-raleway;
   font-weight: 700;
   color: $orange;
 
@@ -51,8 +50,7 @@ h5 {
 }
 
 h6 {
-  font: 16px $font-raleway;
-  line-height: 24px;
+  font: 16px/24px $font-raleway;
   font-weight: 700;
   color: $black;
 }
@@ -93,8 +91,7 @@ h6 {
 }
 
 .under-title {
-  font-family: $font-open-sans;
-  font: 16px/30;
+  font: 16px/30px $font-open-sans;
   font-style: italic;
   font-weight: 400;
 }
@@ -160,7 +157,7 @@ h6 {
 
 .share {
   margin: 20px 10px 0 0;
-  font: $font-open-sans;
+  font-family: $font-open-sans;
 }
 
 .soc-s {
@@ -430,9 +427,7 @@ article {
   padding: 25px 45px;
 
   .quote-text{
-    font-family: $font-lora;
-    font-size: 15px;
-    line-height: 28px;
+    font-family: 15px/28px $font-lora;
     font-style: italic;
     color: $black;
     margin: 0;
@@ -454,7 +449,7 @@ article {
   background-color: $blue;
   max-width: 950px;
   position: relative;
-  height: 195px;       /* Can we give fixed height here????????????????????????????*/
+  height: 195px;       /* Can we give fixed height here????????*/
 
   h6 {
     padding: 40px 0 0 35px ;
@@ -540,9 +535,8 @@ article {
   
   .error-text {
     margin: 130px auto 35px auto;
-    font: 72px $font-open-sans;
+    font: 72px/72px $font-open-sans;
     font-weight: 300;
-    line-height: 72px;
     max-width: 400px;
 
     span {
@@ -998,8 +992,7 @@ article {
 
 
   .p-rel {
-    font-family: $font-raleway;
-    font-size: 16px;
+    font: 16px $font-raleway;
     font-weight: 600;
     margin: 0;
   }
