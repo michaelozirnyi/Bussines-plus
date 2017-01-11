@@ -1,0 +1,63 @@
+doctype html
+html
+    include includes/head
+    body
+        div.header-wrap
+            img(src="images/layer-blog.png" class="header-img" alt="img")
+            include includes/_header
+
+        //Started a part of conten
+        div( class="main-content container piramids-right")
+            h3.upper Blog Page
+            p.under-title Our featured Post
+
+            div( class="all-posts row")
+                div( class="col-xl-1 col-lg-1 col-md-2")
+                    img( src="images/layer-16.png" class="portait" alt="photo")
+                div( class="post col-xl-11 col-lg-11 col-md-10")
+                    h5.upper Blog Heading Here|
+                    p( class="author-post upper") Posted by: admin,  October- 11- 2015
+                    img( src="images/layer-13.png" alt="image" class="img-post")
+                    p.text-p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        | industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        | and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        | the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+                    include includes/share-social
+
+            div( class="all-posts row")
+                div( class="col-xl-1 col-lg-1 col-md-2")
+                    img( src="images/layer-16.png" class="portait" alt="photo")
+                div( class="post col-xl-11 col-lg-11 col-md-10")
+                    h5.upper Blog Heading Here
+                    p( class="author-post upper") Posted by: admin,  October- 12- 2015
+                    img( src="images/layer-14.png" alt="image" class="img-post")
+                    p.text-p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        | industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        | and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        | the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+                    include includes/share-social
+
+            div( class="all-posts row")
+                div( class="col-xl-1 col-lg-1 col-md-2")
+                    img( src="images/layer-16.png" class="portait" alt="photo")
+                div( class="post col-xl-11 col-lg-11 col-md-10")
+                    h5.upper Blog Heading Here
+                    p( class="author-post upper") Posted by: admin,  October- 13- 2015
+                    img( src="images/layer-15.png" alt="image" class="img-post")
+                    p.text-p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                       | industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                       | and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                       | the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+                    include includes/share-social
+
+            div
+                 ul( class="upper send-to-next")
+                    li
+                        a( href="#") 1
+                    li
+                        a( href="#") 2
+                    li
+                        a( href="#") 3
+
+        //Finished a part of content
+        include includes/footer
