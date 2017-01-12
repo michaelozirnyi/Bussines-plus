@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:400,600,700|Raleway:400,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/screen.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -17,16 +17,19 @@
         <img src="images/layer-about.png" class="header-img" alt="img">
 
         <header class="header">
-            <div class="container">
-                <div class="row">
-                    <a href="#" class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-                        <img class="logo" src="images/logo.png" alt="BussinesPlus">
-                    </a>
-                    <div class="phone col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                        <a href="tel:+9978 8856 999" class="text-color-white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
-                    </div>
-                    <nav class="main-nav upper col-lg-8 col-md-12 col-sm-12">
-                        <ul>
+            <div class="container flexes flex-wrap">
+                <a href="#" class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                    <img class="logo" src="images/logo.png" alt="BussinesPlus">
+                </a>
+                <div class="phone col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                    <a href="tel:+9978 8856 999" class="text-color-white"><img src="images/phone-icon.png" alt="phone">+9978 8856 999</a>
+                </div>
+                <nav class="navbar navbar-toggleable-md navbar-light main-nav upper flexes col-lg-8 col-md-12 col-sm-12">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li><a href="index-home-page.html" class="nav text-color-white">Home</a></li>
                             <li><a href="index-about-us.html" class="nav text-color-white active">About us</a></li>
                             <li><a href="index-services.html" class="nav text-color-white">services</a></li>
@@ -35,8 +38,8 @@
                             <li><a href="index-faq.html" class="nav text-color-white">pages</a></li>
                             <li><a href="index-contact-us.html" class="nav text-color-white">Contact Us</a></li>
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </header>
     </div>
@@ -234,7 +237,7 @@
 
     <footer class="footer main-content">
         <div class="container">
-            <div class="row flex-items-xs-between item-center">
+            <div class="row flexes just-c-sp-b item-center">
                 <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12 col-xs-12">
                     <img class="logo" src="images/logo.png" alt="BussinesPlus">
                     <p class="upper footer-color footer-date"> 2015 © lawyer.</p>

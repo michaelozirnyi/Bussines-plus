@@ -43,6 +43,8 @@
 
   .main-nav {
     margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 0;
 
     ul {
       margin-top: 16px;
@@ -77,7 +79,15 @@
   .active {
     color: $orange;
   }
+
+  .navbar-toggler {
+    border-color: #eaeff3;
+    background: #8f8f8f;
+    margin-top: 25px;
+  }
 }
+
+
 
 
 
@@ -97,15 +107,16 @@
 
 @media (max-width: 991px) {
 
-  .main-nav {
-    margin-left: auto;
-    margin-right: auto;
+  .header .main-nav li{
+    margin-bottom: 13px;
+
+    &:first-child {
+      margin-left: 22px;
+    }
   }
 
-  .header {
-    .phone {
+  .header .phone {
       margin-left: auto;
-    }
   }
 }
 
@@ -116,12 +127,5 @@
       margin-left: auto;
       padding-right: 0;
     }
-  }
-}
-
-@media (max-width: 575px) {
-  .main-nav {
-    width: 500px;
-    margin-left: 0;
   }
 }

@@ -85,6 +85,7 @@
 }
 
 .footer-input {
+  width: 50%;
   border: 1px solid $footer-border-color;
   color: $footer-color;
   background-color: rgba(0, 0, 0, 0);
@@ -93,6 +94,8 @@
 }
 
 .comment-foot-form {
+
+  width: 100%;
 
   @extend .footer-input;
   min-height: 100px;
