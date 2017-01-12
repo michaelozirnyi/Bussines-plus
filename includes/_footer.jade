@@ -1,0 +1,44 @@
+footer.footer.main-content
+    div.container
+        div.row.flexes.just-c-sp-b.item-center
+            div.col-xl-2.col-lg-3.col-md-3.col-sm-12.col-xs-12
+                img.logo( src="images/logo.png" alt="BusinessPlus")
+                p.upper.footer-color.footer-date 2015 © lawyer.
+                div.footer-social
+                    a(href="#")
+                        i.fa.fa-facebook(aria-hidden="true")
+                    a(href="#")
+                        i.fa.fa-google-plus(aria-hidden="true")
+                    a(href="#")
+                        i.fa.fa-twitter(aria-hidden="true")
+                    a(href="#")
+                        i.fa.fa-linkedin(aria-hidden="true")
+            div.col-xl-2.col-lg-3.col-md-3.col-sm-10.col-xs-10
+                h5.text-color-white.upper navigation
+                ul.footer-menu.upper
+                    li
+                        a(href="index-home-page.html") Home
+                    li
+                        a(href="index-about-us.html") About us
+                    li
+                        a(href="index-services.html") services
+                    li
+                        a(href="index-testimonial.html") tesimonial
+                    li
+                        a(href="index-blog.html") blog
+                    li
+                        a(href="index-contact-us.html") Contact Us
+            div.col-xl-4.col-lg-4.col-md-5.col-sm-11.col-xs-11.contact-us
+                h5.text-color-white.upper.contact-us Quick contact us
+                form.footer-form(action="#" method="post")
+                    div.row
+                        input.footer-input.col-xs(type="text" placeholder="Name *")
+                        input.footer-input.col-xs(type="email" placeholder="Email *")
+                    div.row
+                        textarea.comment-foot-form.col-xs(cols="30" rows="" placeholder="Comment *")
+                    div.row
+                        include _btn-submit
+
+script(src="bower_components/jquery/dist/jquery.min.js")
+script(src="bower_components/tether/dist/js/tether.min.js")
+script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")

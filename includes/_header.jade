@@ -1,0 +1,50 @@
+mixin header(pageName)
+    header.header
+        div( class="container flexes flex-wrap")
+            a(href="#" class="col-lg-2 col-md-3 col-sm-4 col-xs-4")
+                img(class="logo" src="images/logo.png" alt="BusinessPlus")
+            div( class=" col-lg-2 col-md-3 col-sm-3 col-xs-6")
+                a( href="tel:+9978 8856 999" class="text-color-white") +9978 8856 999
+                    img(src="images/phone-icon.png" alt="phone")
+
+            a( href="tel:+9978 8856 999" class="text-color-white")
+                img( src="images/phone-icon.png" alt="phone")
+                | +9978 8856 999
+            nav( class="main-nav upper flexes col-lg-8 col-md-12 col-sm-12")
+                ul
+                    li
+                        if pageName == 'home'
+                            a(href="index-home-page.html" class="nav text-color-white active") Home
+                        else
+                            a(href="index-home-page.html" class="nav text-color-white") Home
+                    li
+                        if pageName == 'about us'
+                            a(href="index-about-us.html" class="nav text-color-white active") About us
+                        else
+                            a(href="index-about-us.html" class="nav text-color-white") About us
+
+                    li
+                        if pageName == 'services'
+                            a(href="index-services.html" class="nav text-color-white active") services
+                        else
+                            a(href="index-services.html" class="nav text-color-white") services
+                    li
+                        if pageName == 'news'
+                            a(href="index-news.html" class="nav text-color-white active") news
+                        else
+                            a(href="index-news.html" class="nav text-color-white") news
+                    li
+                        if pageName == 'blog'
+                            a(href="index-blog.html" class="nav text-color-white active") blog
+                        else
+                            a(href="index-blog.html" class="nav text-color-white") blog
+                    li
+                        if pageName == 'pages'
+                            a(href="index-faq.html" class="nav text-color-white active") pages
+                        else
+                            a(href="index-faq.html" class="nav text-color-white") pages
+                    li
+                        if pageName == 'Contact Us'
+                            a(href="index-contact-us.html" class="nav text-color-white active") Contact Us
+                        else
+                            a(href="index-contact-us.html" class="nav text-color-white") Contact Us

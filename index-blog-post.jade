@@ -1,0 +1,105 @@
+doctype html
+html
+    include includes/head
+    body
+        div.header-wrap
+            img(src="images/layer-blog.png" class="header-img" alt="img")
+            include includes/_header
+
+        //Started a part of conten
+        div( class="main-content container")
+            h3.upper Blog Page
+            p.under-title Our featured Post
+
+            div( class="all-posts row")
+                div( class="col-xl-1 col-lg-1 col-md-2")
+                    img( src="images/layer-16.png" class="portait" alt="photo")
+                div( class="post col-xl-11 col-lg-11 col-md-10")
+                    h5.upper Blog Heading Here|
+                    p( class="author-post upper") Posted by: admin,  October- 11- 2015
+                    img( src="images/layer-13.png" alt="image" class="img-post")
+                    p.text-p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        | has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        | galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        | centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        | popularised Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        | printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        | only five centuries.
+                    h5.upper Many publishing packages
+                    p.text-p-rm Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        | unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                        | not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        | unchanged It was popularised Lorem Ipsum is simply dummy text of the printing and typesetting
+                        | industry. Lorem Ipsum has been the industry's.
+                    div.pink-quote
+                        p.quote-text Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            | printer took a galley of type and scrambled it to make a type.
+                    p.text-p-rm It is a long established fact that a reader will be distracted by the readable content of a page
+                        | when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+
+                    include includes/share-social
+                div( class="blue-post flexes")
+                    img( class="img-blue-post" src="images/layer-17.png" alt="autor photo")
+                    div.cont-blue-post
+                        h6( class="text-color-white upper") Admin Name
+                        p.text-color-white Established fact that a reader will be distracted by the readable content of a page when looking
+                            | at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                            | of letters, as opposed to using 'Content here, content here', making it look like readable
+                            | English. Many desktop publishing packages.
+
+            h3.upper Comments
+            p.under-title Suggestions & feedback
+            div( class="all-posts flexes between-flex")
+                img( src="images/layer-18.png" class="portait-in-comment" alt="photo")
+                div.post-commentar
+                    //   span  ???
+                    // p class="author-post-comment upper"><span class="autor-post-name">Name here</span>  October- 11- 2015
+                    p.text-comment It is a long established fact that a reader will be distracted by the readable content
+                        | of a page when looking at its layout. The point of using
+                        | Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                        | 'Content here, content here', making.
+                    a( href="#" class="mail-reply")
+                        i( class="fa fa-reply" aria-hidden="true")
+
+            div( class="all-posts flexes between-flex")
+                img( src="images/layer-19.png" class="portait-in-comment" alt="photo")
+                div.post-commentar
+
+                    //p class="author-post-comment upper"><span class="autor-post-name">Name here</span>  October- 11- 2015
+                    p.text-comment It is a long established fact that a reader will be distracted by the readable content
+                        | of a page when looking at its layout. The point of using
+                        | Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                        | 'Content here, content here', making.
+                    a(href="#" class="mail-reply")
+                        i( class="fa fa-reply" aria-hidden="true")
+            div( class="w-comment flexes between-flex")
+                img( src="images/layer-20.png" class="portait-in-comment" alt="photo")
+                div.w-post-commentar
+
+                    //p class="author-post-comment upper"><span class="autor-post-name">Name here</span>  October- 12- 2015
+                    p.text-comment It is a long established fact that a reader will be distracted by the readable
+                        | content of a page when looking at its layout. The pointof using Lorem Ipsum is that it has a
+                        | more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+                        | making it look like readable English. Many desktop publishing packages.
+                    a(href="#" class="mail-reply")
+                        i( class="fa fa-reply" aria-hidden="true")
+
+        div.bg-light-blu
+            div( class="container main-content piramids-right")
+                h3.upper Leave your comment
+                p.under-title Submit your comments now
+                form( action="#" method="post" class="contact-us-form upper flexes bold" name="form")
+                    label
+                        input( type="text" name="name" class="inp" placeholder="Name *")
+                    label
+                        input( type="email" name="email" class="inp" placeholder="Email Address *")
+                    label
+                        input( type="tel" name="phone" class="inp" placeholder="Phone number *")
+                    label
+                        textarea( class="inp" name="message" cols="30" rows="7" placeholder="Comment *")
+                    include includes/btn-submit
+
+        //Finished a part of content
+        include includes/footer

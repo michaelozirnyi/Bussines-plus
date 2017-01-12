@@ -1,0 +1,153 @@
+doctype html
+html
+    include includes/head
+    body
+        div.header-wrap
+            img(src="images/layer-careers.png" class="header-img" alt="img")
+            include includes/_header
+
+        //Started a part of content
+
+        div(class="main-content container piramids-right")
+            div.row
+                div( class="careers-imgs col-xl-3 col-lg-4 col-md-5 col-sm-12")
+                    img( src="images/layer-bord.png" class="border-img" alt="border image")
+                    img( src="images/5235.jpg" class="img-abs" alt="image")
+                div( class="content-info col-xl-8 offset-xl-1 col-lg-8 col-md-7 col-sm-12")
+                    h3.upper Careers
+                    p.under-title Our Opaning positions
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        | been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        | type and scrambled it to make a type specimen book. It has survived not only five centuries.
+        div.bg-light-blu
+            div( class="container main-content")
+                h3.upper Our offers
+                p.under-title We offering awesome facts
+                div.offers
+                    ul( class="flexes flex-wrap")
+                        li
+                            i( class="numb-icon fa fa-smile-o" aria-hidden="true")
+                            div.li-text-offers
+                                h6.upper Fun environment
+                                p Lorem Ipsum is simply dummy text of the printing and type
+                                    | setting industry. Lorem Ipsum has been the industry'
+                        li
+                            i( class="numb-icon fa fa-gift" aria-hidden="true")
+                            div.li-text-offers
+                                h6.upper compensation
+                                p Lorem Ipsum is simply dummy text of the printing and type
+                                    | setting industry. Lorem Ipsum has been the industry'
+
+                        li
+                            i( class="numb-icon fa fa-coffee" aria-hidden="true")
+                            div.li-text-offers
+                                h6.upper all you need
+                                p Lorem Ipsum is simply dummy text of the printing and type
+                                    | setting industry. Lorem Ipsum has been the industry'
+
+                        li
+                            i( class="numb-icon fa fa-rocket" aria-hidden="true")
+                            div.li-text-offers
+                                h6.upper pleasure trips
+                                p Lorem Ipsum is simply dummy text of the printing and type
+                                    | setting industry. Lorem Ipsum has been the industry'
+
+        div( class="main-content container piramids-right")
+            h3.upper Open positions
+            p.under-title Some of our featured vacancy
+            div( id="accordion" role="tablist" aria-multiselectable="true")
+                div.card
+                    div( class="card-header" role="tab" id="headingOne")
+                        h5.mb-0
+                            a( class="flexes between-flex" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                                h6.upper customer relationship manager
+                                i( class="fa fa-arrow-right i-collapse" aria-hidden="true")
+                    div( id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne")
+                        div.card-block
+                            p y richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                | bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                | helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                | excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                | synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                div.card
+                    div( class="card-header" role="tab" id="headingTwo")
+                        h5.mb-0
+                            a( class="collapsed flexes between-flex" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                                h6.upper HR manager
+                                i( class="fa fa-arrow-right i-collapse" aria-hidden="true")
+                    div( id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo")
+                        div.card-block
+                            ul( class="collapse-list flexes flex-wrap just-c-sp-b")
+                                li
+                                    h6( class="upper thin") Mission
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                li
+                                    h6( class="upper thin") Location
+                                    p Washington DC
+                                li
+                                    h6( class="upper thin") Require
+                                    ul.careers-list
+                                        li
+                                            span
+                                                i( class="fa fa-check" aria-hidden="true")
+                                            p Lorem ipsum dolor sit amet, consectetur.
+                                        li
+                                            span
+                                                i( class="fa fa-check" aria-hidden="true")
+                                            p Praesent in urna at neque varius.
+                                        li
+                                            span
+                                                i( class="fa fa-check" aria-hidden="true")
+                                            p Praesent in urna at neque varius.
+                                        li
+                                            span
+                                                i( class="fa fa-check" aria-hidden="true")
+                                            p Mauris lobortis orci non viverra semper
+                                        li
+                                            span
+                                                i( class="fa fa-check" aria-hidden="true")
+                                            p Phasellus tristique sem vitae lorem.
+                                li
+                                    h6( class="upper thin") Type
+                                    p Full-Time Position
+                                li
+                                    h6( class="upper thin") Other
+                                    p Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        | Lorem Ipsum has been the industry.
+                             button( type="button" class="btn upper btn-or-black") read more
+                div.card
+                    div( class="card-header" role="tab" id="headingThree")
+                        h5.mb-0
+                            a( class="collapsed flexes between-flex" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+                                h6.upper Customer Success Manager
+                                i( class="fa fa-arrow-right i-collapse" aria-hidden="true")
+                    div( id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree")
+                        div.card-block
+                            p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                                | ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                | quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+                                | it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                | craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                | butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                | nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                div.card
+                    div( class="card-header" role="tab" id="headingFour")
+                        h5.mb-0
+                            a( class="collapsed flexes between-flex" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
+                                h6.upper Infrastructure Developer
+                                i( class="fa fa-arrow-right i-collapse" aria-hidden="true")
+                    div( id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour")
+                        div.card-block
+                            p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                | squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                | nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                | single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                | beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                | vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                | you probably haven't heard of them accusamus labore sustainable VHS.
+
+        //Finished a part of content
+
+        include includes/footer

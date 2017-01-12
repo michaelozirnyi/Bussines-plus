@@ -1,0 +1,22 @@
+doctype html
+html
+    include includes/_head
+    mixin head('Error 404')
+    body
+        div.header-wrap
+            img(src="images/layer-404.png" class="header-img" alt="img")
+            include includes/_header-without-active-li
+
+        //Started a part of content
+
+        div( class="container main-content error-message piramids-right")
+            p( class="error-text upper")
+                | error
+                span 404
+                | Not foud
+            div.error-info
+                p(class="upper text-error-info") You may have mis-typed the URL Or the page has been removed
+
+        //Finished a part of content
+
+        include includes/_footer
