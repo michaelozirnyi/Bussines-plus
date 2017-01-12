@@ -495,7 +495,6 @@ article {
   width: 83px;
   height: 83px;
   border-radius: 50%;
-  overflow: hidden;
   margin-right: 40px;
 }
 
@@ -985,11 +984,9 @@ article {
 }
 
 .slider-home {
-  padding: 200px 0 ;
   color: #fff;
   position: relative;
   max-width: 510px;
-
 
   .p-rel {
     font: 16px $font-raleway;
@@ -1005,8 +1002,10 @@ article {
   }
 }
 
+
 .carousel {
   position: relative;
+  margin-top: 250px;
 
   .carousel-indicators {
     position: absolute;
@@ -1014,9 +1013,7 @@ article {
     bottom: 0;
     right: 0;
     width: 100px;
-    margin: 0;
-
-
+    margin: 0 auto -100px auto;
     padding: 0;
     list-style: none;
 
@@ -1061,7 +1058,6 @@ article {
       margin-top: 0;
       border-radius: 50%;
     }
-
   }
 }
 
