@@ -1,24 +1,27 @@
 header.header
-    div( class="container flexes flex-wrap")
-        a(href="#" class="col-lg-2 col-md-3 col-sm-4 col-xs-4")
-            img(class="logo" src="images/logo.png" alt="BusinessPlus")
-        div( class=" col-lg-2 col-md-3 col-sm-3 col-xs-6")
-            a( href="tel:+9978 8856 999" class="text-color-white")
+    div.container.flexes.flex-wrap
+        a.col-lg-2.col-md-3.col-sm-4.col-xs-4(href="#")
+            img.logo( src="images/logo.png" alt="BusinessPlus")
+        div.phone.col-lg-2.col-md-3.col-sm-3.col-xs-6
+            a.text-color-white( href="tel:+9978 8856 999")
                 img( src="images/phone-icon.png" alt="phone")
                 | +9978 8856 999
-        nav( class="main-nav upper flexes col-lg-8 col-md-12 col-sm-12")
-            ul
-                li
-                    a(href="index-home-page.html" class="nav text-color-white") Home
-                li
-                    a(href="index-about-us.html" class="nav text-color-white") About us
-                li
-                    a(href="index-services.html" class="nav text-color-white") services
-                li
-                    a(href="index-news.html" class="nav text-color-white") news
-                li
-                    a(href="index-blog.html" class="nav text-color-white") blog
-                li
-                    a(href="index-faq.html" class="nav text-color-white") pages
-                li
-                    a(href="index-contact-us.html" class="nav text-color-white") Contact Us
+        nav.navbar.navbar-toggleable-md.navbar-light.main-nav.upper.flexes.col-lg-8.col-md-12.col-sm-12
+            button.navbar-toggler( type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            div#navbarTogglerDemo01.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+                    li
+                        a.nav.text-color-white(href="index-home-page.html") Home
+                    li
+                        a.nav.text-color-white(href="index-about-us.html") About us
+                    li
+                        a.nav.text-color-white(href="index-services.html") services
+                    li
+                        a.nav.text-color-white(href="index-news.html") news
+                    li
+                        a.nav.text-color-white(href="index-blog.html") blog
+                    li
+                        a.nav.text-color-white(href="index-faq.html") pages
+                    li
+                        a.nav.text-color-white(href="index-contact-us.html") Contact Us

@@ -1,17 +1,51 @@
+include includes/_head
+include includes/_header
+
+
+mixin btn-bunner(btnBunner)
+    button.btn.upper.banner-btn(type="button") #{btnBunner}
+
+mixin sliderPage()
+    div.flexes.flex-wrap.content-carousel
+        div.client.row
+            img( src="images/clients/vector-smart-object.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object2.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object3.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object4.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object5.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object6.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object7.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object8.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object9.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object10.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object11.png" alt="client")
+        div.client.row
+            img( src="images/clients/vector-smart-object12.png" alt="client")
+
+
+
+
 doctype html
 html
-    include includes/_head
     mixin head('About Us')
     body
         div.header-wrap
-            img(src="images/layer-about.png" class="header-img" alt="img")
-            include includes/_header
-            //  миксины(includes files with mixins) вынести в начало документа
+            img.header-img(src="images/layer-about.png" alt="img")
             mixin header('about us')
 
         //Started a part of content
 
-        div(class="main-content container")
+        div.main-content.container
             h3.upper About us
             p.under-title Our Short Story
             p.text-p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -27,122 +61,48 @@ html
                 | undoubtable source.
 
             div.about-banner
-                img( src="images/about-bunner.jpg" class="img-city-banner col-md-12")
+                img.img-city-banner.col-md-12( src="images/about-bunner.jpg")
                 div.flexes
-                    button( type="button" class="btn upper banner-btn") Lets Talk
-                    button( type="button" class="btn upper banner-btn") Clients
+                    mixin btn-bunner('Lets Talk')
+                    mixin btn-bunner('Clients')
 
         div.bg-light-blu
-            div( class="contact-from container main-content piramids-left")
+            div.contact-from.container.main-content.piramids-left
                 h3.upper Our views
                 p.under-title Our Concepts
-
-                div( class="row views-post")
-                    div( class="col-xl-3 col-lg-4 text-ali-cent")
-                        img( class="views-image" src="images/layer%20views1.png" alt="views-image")
-                    div( class="text-p-views col-xl-9 col-lg-8")
+                div.row.views-post
+                    div.col-xl-3.col-lg-4.text-ali-cent
+                        img.views-image( src="images/layer%20views1.png" alt="views-image")
+                    div.text-p-views.col-xl-9.col-lg-8
                         h6.upper Our Mission
                         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                            | Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
                            | took a galley of type and scrambled it to make a type specimen book. It has survived not only
                            | five centuries, but also the.
-
-                div( class="row dir-reverse views-post")
-                    div( class="col-lg-3 text-ali-cent")
-                        img( class="views-image" src="images/layer%20views2.png" alt="views-image")
-                    div( class="text-p-views-reverse col-lg-9")
+                div.row.dir-reverse.views-post
+                    div.col-lg-3.text-ali-cent
+                        img.views-image(src="images/layer%20views2.png" alt="views-image")
+                    div.text-p-views-reverse.col-lg-9
                         h6.upper Our vision
                         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                             | Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
                             | took a galley of type and scrambled it to make a type specimen book. It has survived not only
                             | five centuries, but also the.
-        div( class="main-content container piramids-right")
+        div.main-content.container.piramids-right
             h3.upper Clients
             p.under-title Our Great Clients
-            div( id="carousel-example-generic" class="carousel slide" data-ride="carousel")
-                ol( class="carousel-indicators cl-carousel")
+            div#carousel-example-generic.carousel.slide(data-ride="carousel")
+                ol.carousel-indicators.cl-carousel
                     li( data-target="#carousel-example-generic" data-slide-to="0" class="active")
                     li( data-target="#carousel-example-generic" data-slide-to="1")
                     li( data-target="#carousel-example-generic" data-slide-to="2")
-                div( class="carousel-inner" role="listbox")
-                    div( class="carousel-item active")
-                        div( class="flexes flex-wrap content-carousel")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object2.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object3.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object4.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object5.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object6.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object7.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object8.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object9.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object10.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object11.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object12.png" alt="client")
+                div.carousel-inner(role="listbox")
+                    div.carousel-item.active
+                        mixin sliderPage
                     div.carousel-item
-                        div( class="flexes flex-wrap content-carousel")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object2.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object3.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object4.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object5.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object6.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object7.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object8.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object9.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object10.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object11.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object12.png" alt="client")
+                        mixin sliderPage
                     div.carousel-item
-                        div( class="flexes flex-wrap content-carousel")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object2.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object3.png" alt="client")
-                            div(class="client row")
-                                img( src="images/clients/vector-smart-object4.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object5.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object6.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object7.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object8.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object9.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object10.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object11.png" alt="client")
-                            div( class="client row")
-                                img( src="images/clients/vector-smart-object12.png" alt="client")
+                        mixin sliderPage
 
         //Finished a part of content
 
