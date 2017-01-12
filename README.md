@@ -1,10 +1,21 @@
-#Business plus
+#Business plus - templator Jade
 
-##command for install sass
+##command for install bower
+```  bower install ```
+
+##install sass
 ``` gem install sass ```
 
-###command for install watch
+###install watch
 ``` gem install compass ```
 
 ####compile scss command
-``` compass watch ```
+``` compass watch ``
+
+
+
+##install jade
+``` npm install jade --global ```
+
+####compile jade command
+``` jade -P (file name).jade ```
